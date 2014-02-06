@@ -1,0 +1,13 @@
+.wdb
+.exe
+.cmd
+.log
+.html
+.prj
+.xmsgs
+.sim
+.sdb
+isim/
+iseconfig/
+ipcore_dir/
+_xmsgs/

@@ -1,0 +1,18 @@
+
+# PlanAhead Generated physical constraints 
+
+NET "led[0]" LOC = U16;
+NET "led[1]" LOC = V16;
+NET "led[2]" LOC = U15;
+NET "led[3]" LOC = V15;
+NET "led[4]" LOC = M11;
+NET "led[5]" LOC = N11;
+NET "led[6]" LOC = R11;
+NET "led[7]" LOC = T11;
+NET "clk" LOC = L12;
+NET "data" LOC = J13;
+
+# PlanAhead Generated IO constraints 
+
+NET "clk" PULLUP;
+NET "data" PULLUP;

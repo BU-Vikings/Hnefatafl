@@ -1,0 +1,8 @@
+INTSTYLE=impact
+INFILE=X:\keyboardtest\impact.xsl
+OUTFILE=X:\keyboardtest\impact.xsl
+FAMILY=Single
+PART=Single
+WORKINGDIR=X:\keyboardtest
+LICENSE=iMPACT
+USER_INFO=iMPACT

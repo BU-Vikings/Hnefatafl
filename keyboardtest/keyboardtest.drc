@@ -1,0 +1,8 @@
+Release 14.2 Drc P.28xd (nt)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Fri Feb 21 17:16:11 2014
+
+drc -z keyboardtest.ncd keyboardtest.pcf
+
+DRC detected 0 errors and 0 warnings.

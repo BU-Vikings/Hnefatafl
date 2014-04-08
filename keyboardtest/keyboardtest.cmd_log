@@ -4,3 +4,7 @@ map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -re
 par -w -intstyle ise -ol high -mt off keyboardtest_map.ncd keyboardtest.ncd keyboardtest.pcf 
 trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml keyboardtest.twx keyboardtest.ncd -o keyboardtest.twr keyboardtest.pcf -ucf ucf.ucf 
 bitgen -intstyle ise -f keyboardtest.ut keyboardtest.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ucf.ucf -p xc6slx16-csg324-3 keyboardtest.ngc keyboardtest.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o keyboardtest_map.ncd keyboardtest.ngd keyboardtest.pcf 
+par -w -intstyle ise -ol high -mt off keyboardtest_map.ncd keyboardtest.ncd keyboardtest.pcf 
+bitgen -intstyle ise -f keyboardtest.ut keyboardtest.ncd 

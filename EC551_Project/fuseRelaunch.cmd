@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "X:/Desktop/Hnefatafl/EC551_Project/test_GameBoard_isim_beh.exe" -prj "X:/Desktop/Hnefatafl/EC551_Project/test_GameBoard_beh.prj" "work.test_GameBoard" "work.glbl" 

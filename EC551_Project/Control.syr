@@ -1,0 +1,1116 @@
+Release 14.2 - xst P.28xd (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.29 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.30 secs
+ 
+--> Reading design: Control.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "Control.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "Control"
+Output Format                      : NGC
+Target Device                      : xc6slx16-3-csg324
+
+---- Source Options
+Top Module Name                    : Control
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : NO
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "\\ad\eng\users\j\m\jmoore15\Desktop\Hnefatafl\EC551_Project\vga_controller.v" into library work
+Parsing module <vga_controller_640_60>.
+Analyzing Verilog file "\\ad\eng\users\j\m\jmoore15\Desktop\Hnefatafl\EC551_Project\PosedgeDetector.v" into library work
+Parsing module <PosedgeDetector>.
+Analyzing Verilog file "\\ad\eng\users\j\m\jmoore15\Desktop\Hnefatafl\EC551_Project\vga_display.v" into library work
+Parsing module <Display>.
+Analyzing Verilog file "\\ad\eng\users\j\m\jmoore15\Desktop\Hnefatafl\EC551_Project\ipcore_dir\DemoSprites.v" into library work
+Parsing module <DemoSprites>.
+Analyzing Verilog file "\\ad\eng\users\j\m\jmoore15\Desktop\Hnefatafl\EC551_Project\ipcore_dir\Demo.v" into library work
+Parsing module <Demo>.
+Analyzing Verilog file "\\ad\eng\users\j\m\jmoore15\Desktop\Hnefatafl\EC551_Project\GameBoard.v" into library work
+Parsing module <GameBoard>.
+Analyzing Verilog file "\\ad\eng\users\j\m\jmoore15\Desktop\Hnefatafl\EC551_Project\ClockDivider.v" into library work
+Parsing module <GameClockDivider>.
+INFO:HDLCompiler:693 - "\\ad\eng\users\j\m\jmoore15\Desktop\Hnefatafl\EC551_Project\ClockDivider.v" Line 7. parameter declaration becomes local in GameClockDivider with formal parameter declaration list
+Analyzing Verilog file "\\ad\eng\users\j\m\jmoore15\Desktop\Hnefatafl\EC551_Project\Control.v" into library work
+Parsing module <Control>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <Control>.
+
+Elaborating module <GameClockDivider>.
+WARNING:HDLCompiler:1127 - "\\ad\eng\users\j\m\jmoore15\Desktop\Hnefatafl\EC551_Project\Control.v" Line 65: Assignment to gameclk ignored, since the identifier is never used
+
+Elaborating module <GameBoard>.
+
+Elaborating module <PosedgeDetector>.
+
+Elaborating module <DemoSprites>.
+WARNING:HDLCompiler:1499 - "\\ad\eng\users\j\m\jmoore15\Desktop\Hnefatafl\EC551_Project\ipcore_dir\DemoSprites.v" Line 39: Empty module <DemoSprites> remains a black box.
+WARNING:HDLCompiler:189 - "\\ad\eng\users\j\m\jmoore15\Desktop\Hnefatafl\EC551_Project\Control.v" Line 67: Size mismatch in connection of port <addra>. Formal port size is 13-bit while actual signal size is 16-bit.
+
+Elaborating module <Demo>.
+WARNING:HDLCompiler:1499 - "\\ad\eng\users\j\m\jmoore15\Desktop\Hnefatafl\EC551_Project\ipcore_dir\Demo.v" Line 39: Empty module <Demo> remains a black box.
+WARNING:HDLCompiler:604 - "\\ad\eng\users\j\m\jmoore15\Desktop\Hnefatafl\EC551_Project\Control.v" Line 69: Module instantiation should have an instance name
+
+Elaborating module <Display>.
+
+Elaborating module <vga_controller_640_60>.
+WARNING:HDLCompiler:413 - "\\ad\eng\users\j\m\jmoore15\Desktop\Hnefatafl\EC551_Project\vga_controller.v" Line 48: Result of 12-bit expression is truncated to fit in 11-bit target.
+WARNING:HDLCompiler:413 - "\\ad\eng\users\j\m\jmoore15\Desktop\Hnefatafl\EC551_Project\vga_controller.v" Line 54: Result of 12-bit expression is truncated to fit in 11-bit target.
+WARNING:HDLCompiler:1127 - "\\ad\eng\users\j\m\jmoore15\Desktop\Hnefatafl\EC551_Project\vga_display.v" Line 92: Assignment to img1 ignored, since the identifier is never used
+WARNING:HDLCompiler:413 - "\\ad\eng\users\j\m\jmoore15\Desktop\Hnefatafl\EC551_Project\vga_display.v" Line 124: Result of 32-bit expression is truncated to fit in 11-bit target.
+WARNING:HDLCompiler:413 - "\\ad\eng\users\j\m\jmoore15\Desktop\Hnefatafl\EC551_Project\vga_display.v" Line 127: Result of 32-bit expression is truncated to fit in 11-bit target.
+WARNING:HDLCompiler:413 - "\\ad\eng\users\j\m\jmoore15\Desktop\Hnefatafl\EC551_Project\vga_display.v" Line 130: Result of 32-bit expression is truncated to fit in 11-bit target.
+WARNING:HDLCompiler:413 - "\\ad\eng\users\j\m\jmoore15\Desktop\Hnefatafl\EC551_Project\vga_display.v" Line 133: Result of 32-bit expression is truncated to fit in 11-bit target.
+WARNING:HDLCompiler:413 - "\\ad\eng\users\j\m\jmoore15\Desktop\Hnefatafl\EC551_Project\vga_display.v" Line 136: Result of 32-bit expression is truncated to fit in 11-bit target.
+WARNING:HDLCompiler:413 - "\\ad\eng\users\j\m\jmoore15\Desktop\Hnefatafl\EC551_Project\vga_display.v" Line 139: Result of 32-bit expression is truncated to fit in 11-bit target.
+WARNING:HDLCompiler:413 - "\\ad\eng\users\j\m\jmoore15\Desktop\Hnefatafl\EC551_Project\vga_display.v" Line 142: Result of 32-bit expression is truncated to fit in 11-bit target.
+WARNING:HDLCompiler:413 - "\\ad\eng\users\j\m\jmoore15\Desktop\Hnefatafl\EC551_Project\vga_display.v" Line 145: Result of 32-bit expression is truncated to fit in 11-bit target.
+WARNING:HDLCompiler:413 - "\\ad\eng\users\j\m\jmoore15\Desktop\Hnefatafl\EC551_Project\vga_display.v" Line 148: Result of 32-bit expression is truncated to fit in 11-bit target.
+WARNING:HDLCompiler:413 - "\\ad\eng\users\j\m\jmoore15\Desktop\Hnefatafl\EC551_Project\vga_display.v" Line 151: Result of 32-bit expression is truncated to fit in 11-bit target.
+WARNING:HDLCompiler:413 - "\\ad\eng\users\j\m\jmoore15\Desktop\Hnefatafl\EC551_Project\vga_display.v" Line 154: Result of 32-bit expression is truncated to fit in 11-bit target.
+WARNING:HDLCompiler:413 - "\\ad\eng\users\j\m\jmoore15\Desktop\Hnefatafl\EC551_Project\vga_display.v" Line 158: Result of 32-bit expression is truncated to fit in 11-bit target.
+WARNING:HDLCompiler:413 - "\\ad\eng\users\j\m\jmoore15\Desktop\Hnefatafl\EC551_Project\vga_display.v" Line 161: Result of 32-bit expression is truncated to fit in 11-bit target.
+WARNING:HDLCompiler:413 - "\\ad\eng\users\j\m\jmoore15\Desktop\Hnefatafl\EC551_Project\vga_display.v" Line 164: Result of 32-bit expression is truncated to fit in 11-bit target.
+WARNING:HDLCompiler:413 - "\\ad\eng\users\j\m\jmoore15\Desktop\Hnefatafl\EC551_Project\vga_display.v" Line 167: Result of 32-bit expression is truncated to fit in 11-bit target.
+WARNING:HDLCompiler:413 - "\\ad\eng\users\j\m\jmoore15\Desktop\Hnefatafl\EC551_Project\vga_display.v" Line 170: Result of 32-bit expression is truncated to fit in 11-bit target.
+WARNING:HDLCompiler:413 - "\\ad\eng\users\j\m\jmoore15\Desktop\Hnefatafl\EC551_Project\vga_display.v" Line 173: Result of 32-bit expression is truncated to fit in 11-bit target.
+WARNING:HDLCompiler:413 - "\\ad\eng\users\j\m\jmoore15\Desktop\Hnefatafl\EC551_Project\vga_display.v" Line 176: Result of 32-bit expression is truncated to fit in 11-bit target.
+WARNING:HDLCompiler:413 - "\\ad\eng\users\j\m\jmoore15\Desktop\Hnefatafl\EC551_Project\vga_display.v" Line 179: Result of 32-bit expression is truncated to fit in 11-bit target.
+WARNING:HDLCompiler:413 - "\\ad\eng\users\j\m\jmoore15\Desktop\Hnefatafl\EC551_Project\vga_display.v" Line 182: Result of 32-bit expression is truncated to fit in 11-bit target.
+WARNING:HDLCompiler:413 - "\\ad\eng\users\j\m\jmoore15\Desktop\Hnefatafl\EC551_Project\vga_display.v" Line 185: Result of 32-bit expression is truncated to fit in 11-bit target.
+WARNING:HDLCompiler:413 - "\\ad\eng\users\j\m\jmoore15\Desktop\Hnefatafl\EC551_Project\vga_display.v" Line 188: Result of 32-bit expression is truncated to fit in 11-bit target.
+WARNING:HDLCompiler:413 - "\\ad\eng\users\j\m\jmoore15\Desktop\Hnefatafl\EC551_Project\vga_display.v" Line 246: Result of 32-bit expression is truncated to fit in 16-bit target.
+WARNING:HDLCompiler:413 - "\\ad\eng\users\j\m\jmoore15\Desktop\Hnefatafl\EC551_Project\vga_display.v" Line 247: Result of 32-bit expression is truncated to fit in 14-bit target.
+WARNING:HDLCompiler:413 - "\\ad\eng\users\j\m\jmoore15\Desktop\Hnefatafl\EC551_Project\Control.v" Line 108: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "\\ad\eng\users\j\m\jmoore15\Desktop\Hnefatafl\EC551_Project\Control.v" Line 186: Result of 32-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "\\ad\eng\users\j\m\jmoore15\Desktop\Hnefatafl\EC551_Project\Control.v" Line 190: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "\\ad\eng\users\j\m\jmoore15\Desktop\Hnefatafl\EC551_Project\Control.v" Line 194: Result of 32-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "\\ad\eng\users\j\m\jmoore15\Desktop\Hnefatafl\EC551_Project\Control.v" Line 198: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "\\ad\eng\users\j\m\jmoore15\Desktop\Hnefatafl\EC551_Project\Control.v" Line 220: Result of 32-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "\\ad\eng\users\j\m\jmoore15\Desktop\Hnefatafl\EC551_Project\Control.v" Line 224: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "\\ad\eng\users\j\m\jmoore15\Desktop\Hnefatafl\EC551_Project\Control.v" Line 228: Result of 32-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "\\ad\eng\users\j\m\jmoore15\Desktop\Hnefatafl\EC551_Project\Control.v" Line 232: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "\\ad\eng\users\j\m\jmoore15\Desktop\Hnefatafl\EC551_Project\Control.v" Line 268: Result of 12-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "\\ad\eng\users\j\m\jmoore15\Desktop\Hnefatafl\EC551_Project\Control.v" Line 287: Result of 10-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "\\ad\eng\users\j\m\jmoore15\Desktop\Hnefatafl\EC551_Project\Control.v" Line 325: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "\\ad\eng\users\j\m\jmoore15\Desktop\Hnefatafl\EC551_Project\Control.v" Line 337: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "\\ad\eng\users\j\m\jmoore15\Desktop\Hnefatafl\EC551_Project\Control.v" Line 352: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "\\ad\eng\users\j\m\jmoore15\Desktop\Hnefatafl\EC551_Project\Control.v" Line 355: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "\\ad\eng\users\j\m\jmoore15\Desktop\Hnefatafl\EC551_Project\Control.v" Line 374: Result of 32-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "\\ad\eng\users\j\m\jmoore15\Desktop\Hnefatafl\EC551_Project\Control.v" Line 394: Result of 32-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "\\ad\eng\users\j\m\jmoore15\Desktop\Hnefatafl\EC551_Project\Control.v" Line 409: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "\\ad\eng\users\j\m\jmoore15\Desktop\Hnefatafl\EC551_Project\Control.v" Line 427: Result of 32-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "\\ad\eng\users\j\m\jmoore15\Desktop\Hnefatafl\EC551_Project\Control.v" Line 434: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "\\ad\eng\users\j\m\jmoore15\Desktop\Hnefatafl\EC551_Project\Control.v" Line 448: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "\\ad\eng\users\j\m\jmoore15\Desktop\Hnefatafl\EC551_Project\Control.v" Line 455: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "\\ad\eng\users\j\m\jmoore15\Desktop\Hnefatafl\EC551_Project\Control.v" Line 461: Result of 32-bit expression is truncated to fit in 4-bit target.
+WARNING:Xst:2972 - "\\ad\eng\users\j\m\jmoore15\Desktop\Hnefatafl\EC551_Project\Control.v" line 65. All outputs of instance <gc> of block <GameClockDivider> are unconnected in block <Control>. Underlying logic will be removed.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <Control>.
+    Related source file is "\\ad\eng\users\j\m\jmoore15\Desktop\Hnefatafl\EC551_Project\Control.v".
+        BOARD_WIDTH = 11
+        BOARD_HEIGHT = 11
+        gameclk_hz = 100
+        PIECE_WHITE = 2'b10
+        PIECE_KING = 2'b11
+        PIECE_BLACK = 2'b01
+        PIECE_BLANK = 2'b00
+INFO:Xst:3210 - "\\ad\eng\users\j\m\jmoore15\Desktop\Hnefatafl\EC551_Project\Control.v" line 65: Output port <clk_out> of the instance <gc> is unconnected or connected to loadless signal.
+    Found 1-bit register for signal <sentinel>.
+    Found 1-bit register for signal <data_curr<7>>.
+    Found 1-bit register for signal <data_curr<6>>.
+    Found 1-bit register for signal <data_curr<5>>.
+    Found 1-bit register for signal <data_curr<4>>.
+    Found 1-bit register for signal <data_curr<3>>.
+    Found 1-bit register for signal <data_curr<2>>.
+    Found 1-bit register for signal <data_curr<1>>.
+    Found 1-bit register for signal <data_curr<0>>.
+    Found 4-bit register for signal <b>.
+    Found 5-bit register for signal <state>.
+    Found 8-bit register for signal <led>.
+    Found 8-bit register for signal <data_pre>.
+    Found 4-bit register for signal <hx>.
+    Found 4-bit register for signal <hy>.
+    Found 2-bit register for signal <highlight>.
+    Found 4-bit register for signal <mx>.
+    Found 4-bit register for signal <my>.
+    Found 4-bit register for signal <read_x2>.
+    Found 4-bit register for signal <read_y2>.
+    Found 4-bit register for signal <offset_x>.
+    Found 4-bit register for signal <offset_y>.
+    Found 4-bit register for signal <cx>.
+    Found 4-bit register for signal <cy>.
+    Found 2-bit register for signal <swap_piece>.
+    Found 2-bit register for signal <writeData>.
+    Found 4-bit register for signal <write_x>.
+    Found 4-bit register for signal <write_y>.
+    Found 1-bit register for signal <write>.
+    Found 1-bit register for signal <turn>.
+    Found 4-bit register for signal <vx>.
+    Found 4-bit register for signal <vy>.
+    Found 2-bit register for signal <vtype>.
+    Found 1-bit register for signal <safe_flag>.
+    Found 1-bit register for signal <flag>.
+    Found finite state machine <FSM_0> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 31                                             |
+    | Transitions        | 69                                             |
+    | Inputs             | 25                                             |
+    | Outputs            | 6                                              |
+    | Clock              | clk (rising_edge)                              |
+    | Power Up State     | 00000                                          |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 4-bit adder for signal <b[3]_GND_1_o_add_8_OUT> created at line 108.
+    Found 4-bit adder for signal <hx[3]_GND_1_o_add_45_OUT> created at line 190.
+    Found 4-bit adder for signal <hy[3]_GND_1_o_add_53_OUT> created at line 198.
+    Found 4-bit adder for signal <mx[3]_GND_1_o_add_100_OUT> created at line 224.
+    Found 4-bit adder for signal <my[3]_GND_1_o_add_108_OUT> created at line 232.
+    Found 4-bit adder for signal <hx[3]_GND_1_o_add_153_OUT> created at line 259.
+    Found 4-bit adder for signal <hy[3]_GND_1_o_add_154_OUT> created at line 260.
+    Found 4-bit adder for signal <cx[3]_offset_x[3]_add_167_OUT> created at line 279.
+    Found 4-bit adder for signal <cy[3]_offset_y[3]_add_168_OUT> created at line 280.
+    Found 4-bit adder for signal <vx[3]_GND_1_o_add_219_OUT> created at line 352.
+    Found 4-bit adder for signal <vy[3]_GND_1_o_add_336_OUT> created at line 455.
+    Found 4-bit subtractor for signal <GND_1_o_GND_1_o_sub_42_OUT<3:0>> created at line 186.
+    Found 4-bit subtractor for signal <GND_1_o_GND_1_o_sub_50_OUT<3:0>> created at line 194.
+    Found 4-bit subtractor for signal <GND_1_o_GND_1_o_sub_97_OUT<3:0>> created at line 220.
+    Found 4-bit subtractor for signal <GND_1_o_GND_1_o_sub_105_OUT<3:0>> created at line 228.
+    Found 4-bit subtractor for signal <GND_1_o_GND_1_o_sub_301_OUT<3:0>> created at line 427.
+    Found 4-bit subtractor for signal <GND_1_o_GND_1_o_sub_360_OUT<3:0>> created at line 461.
+WARNING:Xst:737 - Found 1-bit latch for signal <tutorial>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Found 4-bit comparator greater for signal <n0008> created at line 107
+    Found 4-bit comparator greater for signal <n0052> created at line 185
+    Found 4-bit comparator greater for signal <n0056> created at line 189
+    Found 4-bit comparator greater for signal <n0060> created at line 193
+    Found 4-bit comparator greater for signal <n0064> created at line 197
+    Found 4-bit comparator greater for signal <n0105> created at line 219
+    Found 4-bit comparator greater for signal <n0110> created at line 223
+    Found 4-bit comparator greater for signal <n0115> created at line 227
+    Found 4-bit comparator greater for signal <n0120> created at line 231
+    Found 4-bit comparator equal for signal <mx[3]_hx[3]_equal_131_o> created at line 242
+    Found 4-bit comparator equal for signal <my[3]_hy[3]_equal_132_o> created at line 242
+    Found 4-bit comparator greater for signal <mx[3]_hx[3]_LessThan_146_o> created at line 245
+    Found 4-bit comparator greater for signal <hx[3]_mx[3]_LessThan_147_o> created at line 247
+    Found 4-bit comparator greater for signal <my[3]_hy[3]_LessThan_150_o> created at line 252
+    Found 4-bit comparator greater for signal <hy[3]_my[3]_LessThan_151_o> created at line 254
+    Found 4-bit comparator equal for signal <cx[3]_mx[3]_equal_163_o> created at line 269
+    Found 4-bit comparator equal for signal <cy[3]_my[3]_equal_164_o> created at line 269
+    Found 4-bit comparator greater for signal <n0219> created at line 324
+    Found 4-bit comparator greater for signal <n0257> created at line 373
+    Found 4-bit comparator greater for signal <n0262> created at line 392
+    Found 4-bit comparator greater for signal <n0268> created at line 408
+    Found 4-bit comparator equal for signal <read_x2[3]_mx[3]_equal_327_o> created at line 440
+    Found 4-bit comparator equal for signal <read_y2[3]_my[3]_equal_328_o> created at line 440
+    Summary:
+	inferred  13 Adder/Subtractor(s).
+	inferred  97 D-type flip-flop(s).
+	inferred   1 Latch(s).
+	inferred  23 Comparator(s).
+	inferred  54 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <Control> synthesized.
+
+Synthesizing Unit <GameBoard>.
+    Related source file is "\\ad\eng\users\j\m\jmoore15\Desktop\Hnefatafl\EC551_Project\GameBoard.v".
+WARNING:Xst:647 - Input <rst> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:3035 - Index value(s) does not match array range for signal <board_rows_0>, simulation mismatch.
+    Found 11x2-bit dual-port RAM <Mram_board_rows_0> for signal <board_rows_0>.
+WARNING:Xst:3035 - Index value(s) does not match array range for signal <board_rows_1>, simulation mismatch.
+    Found 11x2-bit dual-port RAM <Mram_board_rows_1> for signal <board_rows_1>.
+WARNING:Xst:3035 - Index value(s) does not match array range for signal <board_rows_2>, simulation mismatch.
+    Found 11x2-bit dual-port RAM <Mram_board_rows_2> for signal <board_rows_2>.
+WARNING:Xst:3035 - Index value(s) does not match array range for signal <board_rows_3>, simulation mismatch.
+    Found 11x2-bit dual-port RAM <Mram_board_rows_3> for signal <board_rows_3>.
+WARNING:Xst:3035 - Index value(s) does not match array range for signal <board_rows_4>, simulation mismatch.
+    Found 11x2-bit dual-port RAM <Mram_board_rows_4> for signal <board_rows_4>.
+WARNING:Xst:3035 - Index value(s) does not match array range for signal <board_rows_5>, simulation mismatch.
+    Found 11x2-bit dual-port RAM <Mram_board_rows_5> for signal <board_rows_5>.
+WARNING:Xst:3035 - Index value(s) does not match array range for signal <board_rows_6>, simulation mismatch.
+    Found 11x2-bit dual-port RAM <Mram_board_rows_6> for signal <board_rows_6>.
+WARNING:Xst:3035 - Index value(s) does not match array range for signal <board_rows_7>, simulation mismatch.
+    Found 11x2-bit dual-port RAM <Mram_board_rows_7> for signal <board_rows_7>.
+WARNING:Xst:3035 - Index value(s) does not match array range for signal <board_rows_8>, simulation mismatch.
+    Found 11x2-bit dual-port RAM <Mram_board_rows_8> for signal <board_rows_8>.
+WARNING:Xst:3035 - Index value(s) does not match array range for signal <board_rows_9>, simulation mismatch.
+    Found 11x2-bit dual-port RAM <Mram_board_rows_9> for signal <board_rows_9>.
+WARNING:Xst:3035 - Index value(s) does not match array range for signal <board_rows_10>, simulation mismatch.
+    Found 11x2-bit dual-port RAM <Mram_board_rows_10> for signal <board_rows_10>.
+    Summary:
+	inferred  23 RAM(s).
+Unit <GameBoard> synthesized.
+
+Synthesizing Unit <PosedgeDetector>.
+    Related source file is "\\ad\eng\users\j\m\jmoore15\Desktop\Hnefatafl\EC551_Project\PosedgeDetector.v".
+    Found 1-bit register for signal <signal_d>.
+    Summary:
+	inferred   1 D-type flip-flop(s).
+Unit <PosedgeDetector> synthesized.
+
+Synthesizing Unit <Display>.
+    Related source file is "\\ad\eng\users\j\m\jmoore15\Desktop\Hnefatafl\EC551_Project\vga_display.v".
+        N = 2
+        screen_width = 464
+        square_width = 42
+        screen_height = 464
+        square_height = 42
+        line_width = 4
+        line_right = 2
+        line_left = 40
+        line_bottom = 2
+        line_top = 40
+        sprite_dim = 40
+WARNING:Xst:647 - Input <rst> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 1-bit register for signal <clk_25Mhz>.
+    Found 3-bit register for signal <R>.
+    Found 3-bit register for signal <G>.
+    Found 2-bit register for signal <B>.
+    Found 4-bit register for signal <read_x>.
+    Found 11-bit register for signal <s_x>.
+    Found 4-bit register for signal <read_y>.
+    Found 11-bit register for signal <s_y>.
+    Found 2-bit register for signal <count>.
+    Found 3-bit subtractor for signal <GND_7_o_GND_7_o_sub_205_OUT> created at line 246.
+    Found 12-bit subtractor for signal <GND_7_o_GND_7_o_sub_208_OUT> created at line 247.
+    Found 12-bit subtractor for signal <GND_7_o_GND_7_o_sub_210_OUT> created at line 247.
+    Found 2-bit adder for signal <count[1]_GND_7_o_add_1_OUT> created at line 64.
+    Found 18-bit adder for signal <n0438[17:0]> created at line 246.
+    Found 32-bit adder for signal <n0277> created at line 246.
+    Found 32-bit adder for signal <n0278> created at line 247.
+    Found 11-bit subtractor for signal <GND_7_o_GND_7_o_sub_26_OUT<10:0>> created at line 124.
+    Found 11-bit subtractor for signal <GND_7_o_GND_7_o_sub_29_OUT<10:0>> created at line 127.
+    Found 11-bit subtractor for signal <GND_7_o_GND_7_o_sub_32_OUT<10:0>> created at line 130.
+    Found 11-bit subtractor for signal <GND_7_o_GND_7_o_sub_35_OUT<10:0>> created at line 133.
+    Found 11-bit subtractor for signal <GND_7_o_GND_7_o_sub_38_OUT<10:0>> created at line 136.
+    Found 11-bit subtractor for signal <GND_7_o_GND_7_o_sub_41_OUT<10:0>> created at line 139.
+    Found 11-bit subtractor for signal <GND_7_o_GND_7_o_sub_44_OUT<10:0>> created at line 142.
+    Found 11-bit subtractor for signal <GND_7_o_GND_7_o_sub_47_OUT<10:0>> created at line 145.
+    Found 11-bit subtractor for signal <GND_7_o_GND_7_o_sub_50_OUT<10:0>> created at line 148.
+    Found 11-bit subtractor for signal <GND_7_o_GND_7_o_sub_53_OUT<10:0>> created at line 151.
+    Found 11-bit subtractor for signal <GND_7_o_GND_7_o_sub_56_OUT<10:0>> created at line 154.
+    Found 11-bit subtractor for signal <GND_7_o_GND_7_o_sub_81_OUT<10:0>> created at line 158.
+    Found 11-bit subtractor for signal <GND_7_o_GND_7_o_sub_84_OUT<10:0>> created at line 161.
+    Found 11-bit subtractor for signal <GND_7_o_GND_7_o_sub_87_OUT<10:0>> created at line 164.
+    Found 11-bit subtractor for signal <GND_7_o_GND_7_o_sub_90_OUT<10:0>> created at line 167.
+    Found 11-bit subtractor for signal <GND_7_o_GND_7_o_sub_93_OUT<10:0>> created at line 170.
+    Found 11-bit subtractor for signal <GND_7_o_GND_7_o_sub_96_OUT<10:0>> created at line 173.
+    Found 11-bit subtractor for signal <GND_7_o_GND_7_o_sub_99_OUT<10:0>> created at line 176.
+    Found 11-bit subtractor for signal <GND_7_o_GND_7_o_sub_102_OUT<10:0>> created at line 179.
+    Found 11-bit subtractor for signal <GND_7_o_GND_7_o_sub_105_OUT<10:0>> created at line 182.
+    Found 11-bit subtractor for signal <GND_7_o_GND_7_o_sub_108_OUT<10:0>> created at line 185.
+    Found 11-bit subtractor for signal <GND_7_o_GND_7_o_sub_111_OUT<10:0>> created at line 188.
+    Found 11x6-bit multiplier for signal <s_y[10]_PWR_7_o_MuLt_202_OUT> created at line 246.
+    Found 11x32-bit multiplier for signal <n0398> created at line 246.
+    Found 32x9-bit multiplier for signal <n0400> created at line 247.
+    Found 6-bit comparator lessequal for signal <n0005> created at line 96
+    Found 11-bit comparator greater for signal <vcount[10]_GND_7_o_LessThan_12_o> created at line 97
+    Found 11-bit comparator greater for signal <hcount[10]_GND_7_o_LessThan_13_o> created at line 97
+    Found 6-bit comparator lessequal for signal <n0013> created at line 97
+    Found 11-bit comparator lessequal for signal <n0016> created at line 102
+    Found 11-bit comparator greater for signal <hcount[10]_GND_7_o_LessThan_18_o> created at line 102
+    Found 11-bit comparator lessequal for signal <n0020> created at line 102
+    Found 11-bit comparator greater for signal <vcount[10]_GND_7_o_LessThan_20_o> created at line 102
+    Found 11-bit comparator lessequal for signal <n0029> created at line 122
+    Found 11-bit comparator lessequal for signal <n0031> created at line 122
+    Found 11-bit comparator lessequal for signal <n0035> created at line 125
+    Found 11-bit comparator greater for signal <hcount[10]_GND_7_o_LessThan_28_o> created at line 125
+    Found 11-bit comparator lessequal for signal <n0040> created at line 128
+    Found 11-bit comparator greater for signal <hcount[10]_GND_7_o_LessThan_31_o> created at line 128
+    Found 11-bit comparator lessequal for signal <n0045> created at line 131
+    Found 11-bit comparator greater for signal <hcount[10]_GND_7_o_LessThan_34_o> created at line 131
+    Found 11-bit comparator lessequal for signal <n0050> created at line 134
+    Found 11-bit comparator greater for signal <hcount[10]_GND_7_o_LessThan_37_o> created at line 134
+    Found 11-bit comparator lessequal for signal <n0055> created at line 137
+    Found 11-bit comparator greater for signal <hcount[10]_GND_7_o_LessThan_40_o> created at line 137
+    Found 11-bit comparator lessequal for signal <n0060> created at line 140
+    Found 11-bit comparator greater for signal <hcount[10]_GND_7_o_LessThan_43_o> created at line 140
+    Found 11-bit comparator lessequal for signal <n0065> created at line 143
+    Found 11-bit comparator greater for signal <hcount[10]_GND_7_o_LessThan_46_o> created at line 143
+    Found 11-bit comparator lessequal for signal <n0070> created at line 146
+    Found 11-bit comparator greater for signal <hcount[10]_GND_7_o_LessThan_49_o> created at line 146
+    Found 11-bit comparator lessequal for signal <n0075> created at line 149
+    Found 11-bit comparator greater for signal <hcount[10]_GND_7_o_LessThan_52_o> created at line 149
+    Found 11-bit comparator lessequal for signal <n0080> created at line 152
+    Found 11-bit comparator greater for signal <hcount[10]_GND_7_o_LessThan_55_o> created at line 152
+    Found 11-bit comparator lessequal for signal <n0107> created at line 156
+    Found 11-bit comparator lessequal for signal <n0109> created at line 156
+    Found 11-bit comparator lessequal for signal <n0113> created at line 159
+    Found 11-bit comparator greater for signal <vcount[10]_GND_7_o_LessThan_83_o> created at line 159
+    Found 11-bit comparator lessequal for signal <n0118> created at line 162
+    Found 11-bit comparator greater for signal <vcount[10]_GND_7_o_LessThan_86_o> created at line 162
+    Found 11-bit comparator lessequal for signal <n0123> created at line 165
+    Found 11-bit comparator greater for signal <vcount[10]_GND_7_o_LessThan_89_o> created at line 165
+    Found 11-bit comparator lessequal for signal <n0128> created at line 168
+    Found 11-bit comparator greater for signal <vcount[10]_GND_7_o_LessThan_92_o> created at line 168
+    Found 11-bit comparator lessequal for signal <n0133> created at line 171
+    Found 11-bit comparator greater for signal <vcount[10]_GND_7_o_LessThan_95_o> created at line 171
+    Found 11-bit comparator lessequal for signal <n0138> created at line 174
+    Found 11-bit comparator greater for signal <vcount[10]_GND_7_o_LessThan_98_o> created at line 174
+    Found 11-bit comparator lessequal for signal <n0143> created at line 177
+    Found 11-bit comparator greater for signal <vcount[10]_GND_7_o_LessThan_101_o> created at line 177
+    Found 11-bit comparator lessequal for signal <n0148> created at line 180
+    Found 11-bit comparator greater for signal <vcount[10]_GND_7_o_LessThan_104_o> created at line 180
+    Found 11-bit comparator lessequal for signal <n0153> created at line 183
+    Found 11-bit comparator greater for signal <vcount[10]_GND_7_o_LessThan_107_o> created at line 183
+    Found 11-bit comparator lessequal for signal <n0158> created at line 186
+    Found 11-bit comparator greater for signal <vcount[10]_GND_7_o_LessThan_110_o> created at line 186
+    Found 4-bit comparator equal for signal <hx[3]_read_x[3]_equal_137_o> created at line 191
+    Found 4-bit comparator equal for signal <hy[3]_read_y[3]_equal_138_o> created at line 191
+    Found 4-bit comparator equal for signal <mx[3]_read_x[3]_equal_153_o> created at line 209
+    Found 4-bit comparator equal for signal <my[3]_read_y[3]_equal_154_o> created at line 209
+    Found 11-bit comparator lessequal for signal <n0204> created at line 209
+    Found 11-bit comparator lessequal for signal <n0206> created at line 209
+    Found 11-bit comparator lessequal for signal <n0210> created at line 209
+    Found 11-bit comparator lessequal for signal <n0213> created at line 209
+    Found 11-bit comparator greater for signal <s_x[10]_GND_7_o_LessThan_167_o> created at line 223
+    Found 11-bit comparator greater for signal <s_y[10]_GND_7_o_LessThan_168_o> created at line 223
+    Summary:
+	inferred   3 Multiplier(s).
+	inferred   9 Adder/Subtractor(s).
+	inferred  41 D-type flip-flop(s).
+	inferred  62 Comparator(s).
+	inferred  77 Multiplexer(s).
+Unit <Display> synthesized.
+
+Synthesizing Unit <vga_controller_640_60>.
+    Related source file is "\\ad\eng\users\j\m\jmoore15\Desktop\Hnefatafl\EC551_Project\vga_controller.v".
+        HMAX = 800
+        VMAX = 525
+        HLINES = 640
+        HFP = 648
+        HSP = 744
+        VLINES = 480
+        VFP = 482
+        VSP = 484
+        SPP = 0
+    Found 11-bit register for signal <hcounter>.
+    Found 11-bit register for signal <vcounter>.
+    Found 1-bit register for signal <HS>.
+    Found 1-bit register for signal <VS>.
+    Found 1-bit register for signal <blank>.
+    Found 11-bit adder for signal <hcounter[10]_GND_8_o_add_3_OUT> created at line 48.
+    Found 11-bit adder for signal <vcounter[10]_GND_8_o_add_9_OUT> created at line 54.
+    Found 11-bit comparator lessequal for signal <n0011> created at line 59
+    Found 11-bit comparator greater for signal <hcounter[10]_GND_8_o_LessThan_16_o> created at line 59
+    Found 11-bit comparator lessequal for signal <n0017> created at line 64
+    Found 11-bit comparator greater for signal <vcounter[10]_GND_8_o_LessThan_19_o> created at line 64
+    Found 11-bit comparator greater for signal <hcounter[10]_GND_8_o_LessThan_20_o> created at line 68
+    Found 11-bit comparator greater for signal <vcounter[10]_GND_8_o_LessThan_21_o> created at line 68
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred  25 D-type flip-flop(s).
+	inferred   6 Comparator(s).
+Unit <vga_controller_640_60> synthesized.
+
+Synthesizing Unit <mod_11u_6u>.
+    Related source file is "".
+    Found 17-bit adder for signal <n0407> created at line 0.
+    Found 17-bit adder for signal <GND_9_o_b[5]_add_1_OUT> created at line 0.
+    Found 16-bit adder for signal <n0411> created at line 0.
+    Found 16-bit adder for signal <GND_9_o_b[5]_add_3_OUT> created at line 0.
+    Found 15-bit adder for signal <n0415> created at line 0.
+    Found 15-bit adder for signal <GND_9_o_b[5]_add_5_OUT> created at line 0.
+    Found 14-bit adder for signal <n0419> created at line 0.
+    Found 14-bit adder for signal <GND_9_o_b[5]_add_7_OUT> created at line 0.
+    Found 13-bit adder for signal <n0423> created at line 0.
+    Found 13-bit adder for signal <GND_9_o_b[5]_add_9_OUT> created at line 0.
+    Found 12-bit adder for signal <n0427> created at line 0.
+    Found 12-bit adder for signal <GND_9_o_b[5]_add_11_OUT> created at line 0.
+    Found 11-bit adder for signal <n0431> created at line 0.
+    Found 11-bit adder for signal <a[10]_b[5]_add_13_OUT> created at line 0.
+    Found 11-bit adder for signal <n0435> created at line 0.
+    Found 11-bit adder for signal <a[10]_GND_9_o_add_15_OUT> created at line 0.
+    Found 11-bit adder for signal <n0439> created at line 0.
+    Found 11-bit adder for signal <a[10]_GND_9_o_add_17_OUT> created at line 0.
+    Found 11-bit adder for signal <n0443> created at line 0.
+    Found 11-bit adder for signal <a[10]_GND_9_o_add_19_OUT> created at line 0.
+    Found 11-bit adder for signal <n0447> created at line 0.
+    Found 11-bit adder for signal <a[10]_GND_9_o_add_21_OUT> created at line 0.
+    Found 11-bit adder for signal <n0451> created at line 0.
+    Found 11-bit adder for signal <a[10]_GND_9_o_add_23_OUT> created at line 0.
+    Found 17-bit comparator lessequal for signal <BUS_0001> created at line 0
+    Found 16-bit comparator lessequal for signal <BUS_0002> created at line 0
+    Found 15-bit comparator lessequal for signal <BUS_0003> created at line 0
+    Found 14-bit comparator lessequal for signal <BUS_0004> created at line 0
+    Found 13-bit comparator lessequal for signal <BUS_0005> created at line 0
+    Found 12-bit comparator lessequal for signal <BUS_0006> created at line 0
+    Found 11-bit comparator lessequal for signal <BUS_0007> created at line 0
+    Found 11-bit comparator lessequal for signal <BUS_0008> created at line 0
+    Found 11-bit comparator lessequal for signal <BUS_0009> created at line 0
+    Found 11-bit comparator lessequal for signal <BUS_0010> created at line 0
+    Found 11-bit comparator lessequal for signal <BUS_0011> created at line 0
+    Found 11-bit comparator lessequal for signal <BUS_0012> created at line 0
+    Summary:
+	inferred  24 Adder/Subtractor(s).
+	inferred  12 Comparator(s).
+	inferred 122 Multiplexer(s).
+Unit <mod_11u_6u> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 23
+ 11x2-bit dual-port RAM                                : 23
+# Multipliers                                          : 3
+ 11x6-bit multiplier                                   : 1
+ 32x11-bit multiplier                                  : 1
+ 32x9-bit multiplier                                   : 1
+# Adders/Subtractors                                   : 72
+ 11-bit adder                                          : 26
+ 11-bit subtractor                                     : 2
+ 12-bit adder                                          : 4
+ 12-bit subtractor                                     : 2
+ 13-bit adder                                          : 4
+ 14-bit adder                                          : 4
+ 15-bit adder                                          : 4
+ 16-bit adder                                          : 4
+ 17-bit adder                                          : 4
+ 18-bit adder                                          : 1
+ 2-bit adder                                           : 1
+ 3-bit subtractor                                      : 1
+ 32-bit adder                                          : 2
+ 4-bit adder                                           : 7
+ 4-bit addsub                                          : 4
+ 4-bit subtractor                                      : 2
+# Registers                                            : 50
+ 1-bit register                                        : 19
+ 11-bit register                                       : 4
+ 2-bit register                                        : 6
+ 3-bit register                                        : 2
+ 4-bit register                                        : 17
+ 8-bit register                                        : 2
+# Latches                                              : 1
+ 1-bit latch                                           : 1
+# Comparators                                          : 115
+ 11-bit comparator greater                             : 30
+ 11-bit comparator lessequal                           : 44
+ 12-bit comparator lessequal                           : 2
+ 13-bit comparator lessequal                           : 2
+ 14-bit comparator lessequal                           : 2
+ 15-bit comparator lessequal                           : 2
+ 16-bit comparator lessequal                           : 2
+ 17-bit comparator lessequal                           : 2
+ 4-bit comparator equal                                : 10
+ 4-bit comparator greater                              : 17
+ 6-bit comparator lessequal                            : 2
+# Multiplexers                                         : 375
+ 1-bit 2-to-1 multiplexer                              : 247
+ 11-bit 2-to-1 multiplexer                             : 44
+ 2-bit 2-to-1 multiplexer                              : 13
+ 3-bit 2-to-1 multiplexer                              : 8
+ 4-bit 2-to-1 multiplexer                              : 57
+ 6-bit 2-to-1 multiplexer                              : 2
+ 8-bit 2-to-1 multiplexer                              : 4
+# FSMs                                                 : 1
+# Xors                                                 : 51
+ 1-bit xor2                                            : 51
+
+=========================================================================
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst:1426 - The value init of the FF/Latch tutorial hinder the constant cleaning in the block Control.
+   You should achieve better results by setting this init to 0.
+
+Synthesizing (advanced) Unit <Control>.
+The following registers are absorbed into counter <hx>: 1 register on signal <hx>.
+The following registers are absorbed into counter <hy>: 1 register on signal <hy>.
+The following registers are absorbed into counter <mx>: 1 register on signal <mx>.
+The following registers are absorbed into counter <my>: 1 register on signal <my>.
+The following registers are absorbed into counter <b>: 1 register on signal <b>.
+Unit <Control> synthesized (advanced).
+
+Synthesizing (advanced) Unit <Display>.
+The following registers are absorbed into counter <count>: 1 register on signal <count>.
+	Multiplier <Mmult_s_y[10]_PWR_7_o_MuLt_202_OUT> in block <Display> and adder/subtractor <Madd_n0438[17:0]_Madd> in block <Display> are combined into a MAC<Maddsub_s_y[10]_PWR_7_o_MuLt_202_OUT>.
+	The following registers are also absorbed by the MAC: <s_x> in block <Display>.
+Unit <Display> synthesized (advanced).
+
+Synthesizing (advanced) Unit <GameBoard>.
+INFO:Xst:3231 - The small RAM <Mram_board_rows_1> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 11-word x 2-bit                     |          |
+    |     clkA           | connected to signal <clk>           | rise     |
+    |     weA            | connected to internal node          | high     |
+    |     addrA          | connected to signal <write_y>       |          |
+    |     diA            | connected to signal <writeData>     |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 11-word x 2-bit                     |          |
+    |     addrB          | connected to signal <read_y>        |          |
+    |     doB            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3231 - The small RAM <Mram_board_rows_0> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 11-word x 2-bit                     |          |
+    |     clkA           | connected to signal <clk>           | rise     |
+    |     weA            | connected to internal node          | high     |
+    |     addrA          | connected to signal <write_y>       |          |
+    |     diA            | connected to signal <writeData>     |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 11-word x 2-bit                     |          |
+    |     addrB          | connected to signal <read_y>        |          |
+    |     doB            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3231 - The small RAM <Mram_board_rows_2> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 11-word x 2-bit                     |          |
+    |     clkA           | connected to signal <clk>           | rise     |
+    |     weA            | connected to internal node          | high     |
+    |     addrA          | connected to signal <write_y>       |          |
+    |     diA            | connected to signal <writeData>     |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 11-word x 2-bit                     |          |
+    |     addrB          | connected to signal <read_y>        |          |
+    |     doB            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3231 - The small RAM <Mram_board_rows_3> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 11-word x 2-bit                     |          |
+    |     clkA           | connected to signal <clk>           | rise     |
+    |     weA            | connected to internal node          | high     |
+    |     addrA          | connected to signal <write_y>       |          |
+    |     diA            | connected to signal <writeData>     |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 11-word x 2-bit                     |          |
+    |     addrB          | connected to signal <read_y>        |          |
+    |     doB            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3231 - The small RAM <Mram_board_rows_4> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 11-word x 2-bit                     |          |
+    |     clkA           | connected to signal <clk>           | rise     |
+    |     weA            | connected to internal node          | high     |
+    |     addrA          | connected to signal <write_y>       |          |
+    |     diA            | connected to signal <writeData>     |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 11-word x 2-bit                     |          |
+    |     addrB          | connected to signal <read_y>        |          |
+    |     doB            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3231 - The small RAM <Mram_board_rows_6> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 11-word x 2-bit                     |          |
+    |     clkA           | connected to signal <clk>           | rise     |
+    |     weA            | connected to internal node          | high     |
+    |     addrA          | connected to signal <write_y>       |          |
+    |     diA            | connected to signal <writeData>     |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 11-word x 2-bit                     |          |
+    |     addrB          | connected to signal <read_y>        |          |
+    |     doB            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3231 - The small RAM <Mram_board_rows_5> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 11-word x 2-bit                     |          |
+    |     clkA           | connected to signal <clk>           | rise     |
+    |     weA            | connected to internal node          | high     |
+    |     addrA          | connected to signal <write_y>       |          |
+    |     diA            | connected to signal <writeData>     |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 11-word x 2-bit                     |          |
+    |     addrB          | connected to signal <read_y>        |          |
+    |     doB            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3231 - The small RAM <Mram_board_rows_7> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 11-word x 2-bit                     |          |
+    |     clkA           | connected to signal <clk>           | rise     |
+    |     weA            | connected to internal node          | high     |
+    |     addrA          | connected to signal <write_y>       |          |
+    |     diA            | connected to signal <writeData>     |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 11-word x 2-bit                     |          |
+    |     addrB          | connected to signal <read_y>        |          |
+    |     doB            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3231 - The small RAM <Mram_board_rows_8> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 11-word x 2-bit                     |          |
+    |     clkA           | connected to signal <clk>           | rise     |
+    |     weA            | connected to internal node          | high     |
+    |     addrA          | connected to signal <write_y>       |          |
+    |     diA            | connected to signal <writeData>     |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 11-word x 2-bit                     |          |
+    |     addrB          | connected to signal <read_y>        |          |
+    |     doB            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3231 - The small RAM <Mram_board_rows_9> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 11-word x 2-bit                     |          |
+    |     clkA           | connected to signal <clk>           | rise     |
+    |     weA            | connected to internal node          | high     |
+    |     addrA          | connected to signal <write_y>       |          |
+    |     diA            | connected to signal <writeData>     |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 11-word x 2-bit                     |          |
+    |     addrB          | connected to signal <read_y>        |          |
+    |     doB            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3231 - The small RAM <Mram_board_rows_01> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 11-word x 2-bit                     |          |
+    |     clkA           | connected to signal <clk>           | rise     |
+    |     weA            | connected to internal node          | high     |
+    |     addrA          | connected to signal <write_y>       |          |
+    |     diA            | connected to signal <writeData>     |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 11-word x 2-bit                     |          |
+    |     addrB          | connected to signal <read_y2>       |          |
+    |     doB            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3231 - The small RAM <Mram_board_rows_10> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 11-word x 2-bit                     |          |
+    |     clkA           | connected to signal <clk>           | rise     |
+    |     weA            | connected to internal node          | high     |
+    |     addrA          | connected to signal <write_y>       |          |
+    |     diA            | connected to signal <writeData>     |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 11-word x 2-bit                     |          |
+    |     addrB          | connected to signal <read_y>        |          |
+    |     doB            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3231 - The small RAM <Mram_board_rows_11> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 11-word x 2-bit                     |          |
+    |     clkA           | connected to signal <clk>           | rise     |
+    |     weA            | connected to internal node          | high     |
+    |     addrA          | connected to signal <write_y>       |          |
+    |     diA            | connected to signal <writeData>     |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 11-word x 2-bit                     |          |
+    |     addrB          | connected to signal <read_y2>       |          |
+    |     doB            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3231 - The small RAM <Mram_board_rows_21> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 11-word x 2-bit                     |          |
+    |     clkA           | connected to signal <clk>           | rise     |
+    |     weA            | connected to internal node          | high     |
+    |     addrA          | connected to signal <write_y>       |          |
+    |     diA            | connected to signal <writeData>     |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 11-word x 2-bit                     |          |
+    |     addrB          | connected to signal <read_y2>       |          |
+    |     doB            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3231 - The small RAM <Mram_board_rows_31> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 11-word x 2-bit                     |          |
+    |     clkA           | connected to signal <clk>           | rise     |
+    |     weA            | connected to internal node          | high     |
+    |     addrA          | connected to signal <write_y>       |          |
+    |     diA            | connected to signal <writeData>     |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 11-word x 2-bit                     |          |
+    |     addrB          | connected to signal <read_y2>       |          |
+    |     doB            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3231 - The small RAM <Mram_board_rows_41> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 11-word x 2-bit                     |          |
+    |     clkA           | connected to signal <clk>           | rise     |
+    |     weA            | connected to internal node          | high     |
+    |     addrA          | connected to signal <write_y>       |          |
+    |     diA            | connected to signal <writeData>     |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 11-word x 2-bit                     |          |
+    |     addrB          | connected to signal <read_y2>       |          |
+    |     doB            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3231 - The small RAM <Mram_board_rows_51> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 11-word x 2-bit                     |          |
+    |     clkA           | connected to signal <clk>           | rise     |
+    |     weA            | connected to internal node          | high     |
+    |     addrA          | connected to signal <write_y>       |          |
+    |     diA            | connected to signal <writeData>     |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 11-word x 2-bit                     |          |
+    |     addrB          | connected to signal <read_y2>       |          |
+    |     doB            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3231 - The small RAM <Mram_board_rows_61> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 11-word x 2-bit                     |          |
+    |     clkA           | connected to signal <clk>           | rise     |
+    |     weA            | connected to internal node          | high     |
+    |     addrA          | connected to signal <write_y>       |          |
+    |     diA            | connected to signal <writeData>     |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 11-word x 2-bit                     |          |
+    |     addrB          | connected to signal <read_y2>       |          |
+    |     doB            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3231 - The small RAM <Mram_board_rows_71> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 11-word x 2-bit                     |          |
+    |     clkA           | connected to signal <clk>           | rise     |
+    |     weA            | connected to internal node          | high     |
+    |     addrA          | connected to signal <write_y>       |          |
+    |     diA            | connected to signal <writeData>     |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 11-word x 2-bit                     |          |
+    |     addrB          | connected to signal <read_y2>       |          |
+    |     doB            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3231 - The small RAM <Mram_board_rows_91> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 11-word x 2-bit                     |          |
+    |     clkA           | connected to signal <clk>           | rise     |
+    |     weA            | connected to internal node          | high     |
+    |     addrA          | connected to signal <write_y>       |          |
+    |     diA            | connected to signal <writeData>     |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 11-word x 2-bit                     |          |
+    |     addrB          | connected to signal <read_y2>       |          |
+    |     doB            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3231 - The small RAM <Mram_board_rows_81> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 11-word x 2-bit                     |          |
+    |     clkA           | connected to signal <clk>           | rise     |
+    |     weA            | connected to internal node          | high     |
+    |     addrA          | connected to signal <write_y>       |          |
+    |     diA            | connected to signal <writeData>     |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 11-word x 2-bit                     |          |
+    |     addrB          | connected to signal <read_y2>       |          |
+    |     doB            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3231 - The small RAM <Mram_board_rows_101> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 11-word x 2-bit                     |          |
+    |     clkA           | connected to signal <clk>           | rise     |
+    |     weA            | connected to internal node          | high     |
+    |     addrA          | connected to signal <write_y>       |          |
+    |     diA            | connected to signal <writeData>     |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 11-word x 2-bit                     |          |
+    |     addrB          | connected to signal <read_y2>       |          |
+    |     doB            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3231 - The small RAM <Mram_board_rows_52> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 11-word x 2-bit                     |          |
+    |     clkA           | connected to signal <clk>           | rise     |
+    |     weA            | connected to internal node          | high     |
+    |     addrA          | connected to signal <write_y>       |          |
+    |     diA            | connected to signal <writeData>     |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 11-word x 2-bit                     |          |
+    |     addrB          | connected to signal <"0101">        |          |
+    |     doB            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <GameBoard> synthesized (advanced).
+
+Synthesizing (advanced) Unit <vga_controller_640_60>.
+The following registers are absorbed into counter <hcounter>: 1 register on signal <hcounter>.
+The following registers are absorbed into counter <vcounter>: 1 register on signal <vcounter>.
+Unit <vga_controller_640_60> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 23
+ 11x2-bit dual-port distributed RAM                    : 23
+# MACs                                                 : 1
+ 11x6-to-16-bit MAC                                    : 1
+# Multipliers                                          : 2
+ 32x11-bit multiplier                                  : 1
+ 32x9-bit multiplier                                   : 1
+# Adders/Subtractors                                   : 39
+ 11-bit adder carry in                                 : 22
+ 11-bit subtractor                                     : 2
+ 12-bit subtractor                                     : 2
+ 14-bit adder                                          : 1
+ 16-bit adder                                          : 1
+ 3-bit subtractor                                      : 1
+ 4-bit adder                                           : 6
+ 4-bit subtractor                                      : 2
+ 6-bit adder carry in                                  : 2
+# Counters                                             : 8
+ 11-bit up counter                                     : 2
+ 2-bit up counter                                      : 1
+ 4-bit up counter                                      : 1
+ 4-bit updown counter                                  : 4
+# Registers                                            : 121
+ Flip-Flops                                            : 121
+# Comparators                                          : 115
+ 11-bit comparator greater                             : 30
+ 11-bit comparator lessequal                           : 44
+ 12-bit comparator lessequal                           : 2
+ 13-bit comparator lessequal                           : 2
+ 14-bit comparator lessequal                           : 2
+ 15-bit comparator lessequal                           : 2
+ 16-bit comparator lessequal                           : 2
+ 17-bit comparator lessequal                           : 2
+ 4-bit comparator equal                                : 10
+ 4-bit comparator greater                              : 17
+ 6-bit comparator lessequal                            : 2
+# Multiplexers                                         : 380
+ 1-bit 2-to-1 multiplexer                              : 257
+ 11-bit 2-to-1 multiplexer                             : 43
+ 2-bit 2-to-1 multiplexer                              : 13
+ 3-bit 2-to-1 multiplexer                              : 8
+ 4-bit 2-to-1 multiplexer                              : 53
+ 6-bit 2-to-1 multiplexer                              : 2
+ 8-bit 2-to-1 multiplexer                              : 4
+# FSMs                                                 : 1
+# Xors                                                 : 51
+ 1-bit xor2                                            : 51
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1426 - The value init of the FF/Latch tutorial hinder the constant cleaning in the block Control.
+   You should achieve better results by setting this init to 0.
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <FSM_0> on signal <state[1:5]> with user encoding.
+-------------------
+ State | Encoding
+-------------------
+ 00000 | 00000
+ 00001 | 00001
+ 00010 | 00010
+ 00011 | 00011
+ 00100 | 00100
+ 00101 | 00101
+ 00110 | 00110
+ 00111 | 00111
+ 01000 | 01000
+ 01001 | 01001
+ 01010 | 01010
+ 01011 | 01011
+ 01100 | 01100
+ 10111 | 10111
+ 01111 | 01111
+ 01110 | 01110
+ 01101 | 01101
+ 11110 | 11110
+ 10000 | 10000
+ 10010 | 10010
+ 10001 | 10001
+ 10100 | 10100
+ 10011 | 10011
+ 10110 | 10110
+ 10101 | 10101
+ 11001 | 11001
+ 11000 | 11000
+ 11010 | 11010
+ 11100 | 11100
+ 11011 | 11011
+ 11101 | 11101
+-------------------
+WARNING:Xst:2677 - Node <Mmult_n03981> of sequential type is unconnected in block <Display>.
+WARNING:Xst:2677 - Node <Mmult_n04001> of sequential type is unconnected in block <Display>.
+INFO:Xst:2261 - The FF/Latch <offset_y_1> in Unit <Control> is equivalent to the following 2 FFs/Latches, which will be removed : <offset_y_2> <offset_y_3> 
+INFO:Xst:2261 - The FF/Latch <offset_x_1> in Unit <Control> is equivalent to the following 2 FFs/Latches, which will be removed : <offset_x_2> <offset_x_3> 
+
+Optimizing unit <Control> ...
+
+Optimizing unit <GameBoard> ...
+
+Optimizing unit <Display> ...
+
+Optimizing unit <vga_controller_640_60> ...
+
+Optimizing unit <mod_11u_6u> ...

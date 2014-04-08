@@ -1,8 +1,8 @@
 INTSTYLE=ise
-INFILE=X:\keyboardtest\keyboardtest.ncd
-OUTFILE=X:\keyboardtest\keyboardtest.bit
+INFILE=E:\Hnefatafl\keyboardtest\keyboardtest.ncd
+OUTFILE=E:\Hnefatafl\keyboardtest\keyboardtest.bit
 FAMILY=Spartan6
 PART=xc6slx16-3csg324
-WORKINGDIR=X:\keyboardtest
+WORKINGDIR=E:\Hnefatafl\keyboardtest
 LICENSE=ISE
 USER_INFO=174135685_174135686_210570941_745

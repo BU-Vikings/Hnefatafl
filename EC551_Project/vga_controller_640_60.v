@@ -22,17 +22,17 @@ module vga_controller_640_60 (rst,pixel_clk,HS,VS,hcounter,vcounter,blank);
 
 	input rst, pixel_clk;	// global reset, pixel clock
 	output reg HS, VS, blank;	// sync controls, blank indicator
-	output reg [10:0] hcounter, vcounter;	// pixel coordinates
+	output reg [11:0] hcounter, vcounter;	// pixel coordinates
 
-	parameter HMAX = 800; 	// maxium value for the horizontal pixel counter
-	parameter VMAX = 525; 	// maxium value for the vertical pixel counter
-	parameter HLINES = 640;	// total number of visible columns
-	parameter HFP = 648; 	// value for the horizontal counter where front porch ends
-	parameter HSP = 744; 	// value for the horizontal counter where the synch pulse ends
-	parameter VLINES = 480;	// total number of visible lines
-	parameter VFP = 482; 	// value for the vertical counter where the frone proch ends
-	parameter VSP = 484; 	// value for the vertical counter where the synch pulse ends
-	parameter SPP = 0;		// value for the porch synchronization pulse
+	parameter HMAX = 1056; 	// maxium value for the horizontal pixel counter
+	parameter VMAX = 628; 	// maxium value for the vertical pixel counter
+	parameter HLINES = 800;//	// total number of visible columns
+	parameter HFP = 840; 	// value for the horizontal counter where front porch ends
+	parameter HSP = 965; 	// value for the horizontal counter where the synch pulse ends
+	parameter VLINES = 600;//	// total number of visible lines
+	parameter VFP = 601; 	// value for the vertical counter where the frone proch ends
+	parameter VSP = 605; 	// value for the vertical counter where the synch pulse ends
+	parameter SPP = 1;		// value for the porch synchronization pulse
 
 	wire video_enable;	// valid region indicator
 	

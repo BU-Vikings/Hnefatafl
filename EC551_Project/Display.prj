@@ -1,2 +1,3 @@
-verilog work "vga_controller_640_60.v"
+verilog work "vga_controller.v"
+verilog work "clkdivide.v"
 verilog work "vga_display.v"

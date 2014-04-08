@@ -1,0 +1,21 @@
+Running: C:\Xilinx\14.2\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o X:/Desktop/Hnefatafl/EC551_Project/test_GameBoard_isim_beh.exe -prj X:/Desktop/Hnefatafl/EC551_Project/test_GameBoard_beh.prj work.test_GameBoard work.glbl 
+ISim P.28xd (signature 0xa0883be4)
+Number of CPUs detected in this system: 2
+Turning on mult-threading, number of parallel sub-compilation jobs: 4 
+Determining compilation order of HDL files
+Analyzing Verilog file "X:/Desktop/Hnefatafl/EC551_Project/PosedgeDetector.v" into library work
+Analyzing Verilog file "X:/Desktop/Hnefatafl/EC551_Project/GameBoard.v" into library work
+Analyzing Verilog file "X:/Desktop/Hnefatafl/EC551_Project/test_GameBoard.v" into library work
+Analyzing Verilog file "C:/Xilinx/14.2/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling module PosedgeDetector
+Compiling module GameBoard
+Compiling module test_GameBoard
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 4 Verilog Units
+Built simulation executable X:/Desktop/Hnefatafl/EC551_Project/test_GameBoard_isim_beh.exe
+Fuse Memory Usage: 27940 KB
+Fuse CPU Usage: 670 ms

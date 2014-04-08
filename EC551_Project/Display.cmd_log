@@ -10,3 +10,4 @@ map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -re
 par -w -intstyle ise -ol high -mt off Display_map.ncd Display.ncd Display.pcf 
 trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Display.twx Display.ncd -o Display.twr Display.pcf -ucf pinout.ucf 
 bitgen -intstyle ise -f Display.ut Display.ncd 
+xst -intstyle ise -ifn "E:/Hnefatafl/EC551_Project/Display.xst" -ofn "E:/Hnefatafl/EC551_Project/Display.syr" 

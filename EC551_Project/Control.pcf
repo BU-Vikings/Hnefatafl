@@ -1,0 +1,29 @@
+//! **************************************************************************
+// Written by: Map P.28xd on Tue Apr 08 01:47:50 2014
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "HS" LOCATE = SITE "N6" LEVEL 1;
+COMP "VS" LOCATE = SITE "P7" LEVEL 1;
+COMP "clk" LOCATE = SITE "V10" LEVEL 1;
+COMP "rst" LOCATE = SITE "B8" LEVEL 1;
+COMP "B<0>" LOCATE = SITE "R7" LEVEL 1;
+COMP "B<1>" LOCATE = SITE "T7" LEVEL 1;
+COMP "G<0>" LOCATE = SITE "P8" LEVEL 1;
+COMP "G<1>" LOCATE = SITE "T6" LEVEL 1;
+COMP "G<2>" LOCATE = SITE "V6" LEVEL 1;
+COMP "R<0>" LOCATE = SITE "U7" LEVEL 1;
+COMP "R<1>" LOCATE = SITE "V7" LEVEL 1;
+COMP "R<2>" LOCATE = SITE "N7" LEVEL 1;
+COMP "data" LOCATE = SITE "J13" LEVEL 1;
+COMP "led<0>" LOCATE = SITE "U16" LEVEL 1;
+COMP "led<1>" LOCATE = SITE "V16" LEVEL 1;
+COMP "led<2>" LOCATE = SITE "U15" LEVEL 1;
+COMP "led<3>" LOCATE = SITE "V15" LEVEL 1;
+COMP "led<4>" LOCATE = SITE "M11" LEVEL 1;
+COMP "led<5>" LOCATE = SITE "N11" LEVEL 1;
+COMP "led<6>" LOCATE = SITE "R11" LEVEL 1;
+COMP "led<7>" LOCATE = SITE "T11" LEVEL 1;
+COMP "keybdclk" LOCATE = SITE "L12" LEVEL 1;
+SCHEMATIC END;
+

@@ -1,0 +1,8 @@
+verilog work "vga_controller.v"
+verilog work "PosedgeDetector.v"
+verilog work "vga_display.v"
+verilog work "ipcore_dir/DemoSprites.v"
+verilog work "ipcore_dir/Demo.v"
+verilog work "GameBoard.v"
+verilog work "ClockDivider.v"
+verilog work "Control.v"

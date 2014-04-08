@@ -1,4 +1,4 @@
-Release 14.2 Map P.28xd (nt)
+Release 14.2 Map P.28xd (nt64)
 Xilinx Mapping Report File for Design 'keyboardtest'
 
 Design Information
@@ -11,7 +11,7 @@ Target Device  : xc6slx16
 Target Package : csg324
 Target Speed   : -3
 Mapper Version : spartan6 -- $Revision: 1.55 $
-Mapped Date    : Fri Feb 21 17:15:27 2014
+Mapped Date    : Mon Mar 31 22:35:06 2014
 
 Design Summary
 --------------
@@ -83,8 +83,8 @@ Specific Feature Utilization:
 
 Average Fanout of Non-Clock Nets:                3.57
 
-Peak Memory Usage:  282 MB
-Total REAL time to MAP completion:  11 secs 
+Peak Memory Usage:  356 MB
+Total REAL time to MAP completion:  9 secs 
 Total CPU time to MAP completion:   7 secs 
 
 Table of Contents

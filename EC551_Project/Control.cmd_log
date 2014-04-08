@@ -1,0 +1,885 @@
+xst -intstyle ise -ifn "X:/Desktop/GitHub/Hnefatafl/EC551_Project/Control.xst" -ofn "X:/Desktop/GitHub/Hnefatafl/EC551_Project/Control.syr" 
+xst -intstyle ise -ifn "X:/Desktop/GitHub/Hnefatafl/EC551_Project/Control.xst" -ofn "X:/Desktop/GitHub/Hnefatafl/EC551_Project/Control.syr" 
+xst -intstyle ise -ifn "X:/Desktop/GitHub/Hnefatafl/EC551_Project/Control.xst" -ofn "X:/Desktop/GitHub/Hnefatafl/EC551_Project/Control.syr" 
+xst -intstyle ise -ifn "X:/Desktop/GitHub/Hnefatafl/EC551_Project/Control.xst" -ofn "X:/Desktop/GitHub/Hnefatafl/EC551_Project/Control.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pinout.ucf -p xc6slx16-csg324-3 Control.ngc Control.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Control_map.ncd Control.ngd Control.pcf 
+par -w -intstyle ise -ol high -mt off Control_map.ncd Control.ncd Control.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Control.twx Control.ncd -o Control.twr Control.pcf -ucf pinout.ucf 
+bitgen -intstyle ise -f Control.ut Control.ncd 
+xst -intstyle ise -ifn "X:/Desktop/GitHub/Hnefatafl/EC551_Project/Control.xst" -ofn "X:/Desktop/GitHub/Hnefatafl/EC551_Project/Control.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pinout.ucf -p xc6slx16-csg324-3 Control.ngc Control.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Control_map.ncd Control.ngd Control.pcf 
+par -w -intstyle ise -ol high -mt off Control_map.ncd Control.ncd Control.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Control.twx Control.ncd -o Control.twr Control.pcf -ucf pinout.ucf 
+bitgen -intstyle ise -f Control.ut Control.ncd 
+xst -intstyle ise -ifn "X:/Desktop/GitHub/Hnefatafl/EC551_Project/Control.xst" -ofn "X:/Desktop/GitHub/Hnefatafl/EC551_Project/Control.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pinout.ucf -p xc6slx16-csg324-3 Control.ngc Control.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Control_map.ncd Control.ngd Control.pcf 
+par -w -intstyle ise -ol high -mt off Control_map.ncd Control.ncd Control.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Control.twx Control.ncd -o Control.twr Control.pcf -ucf pinout.ucf 
+bitgen -intstyle ise -f Control.ut Control.ncd 
+xst -intstyle ise -ifn "X:/Desktop/GitHub/Hnefatafl/EC551_Project/Control.xst" -ofn "X:/Desktop/GitHub/Hnefatafl/EC551_Project/Control.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pinout.ucf -p xc6slx16-csg324-3 Control.ngc Control.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Control_map.ncd Control.ngd Control.pcf 
+par -w -intstyle ise -ol high -mt off Control_map.ncd Control.ncd Control.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Control.twx Control.ncd -o Control.twr Control.pcf -ucf pinout.ucf 
+bitgen -intstyle ise -f Control.ut Control.ncd 
+xst -intstyle ise -ifn "X:/Desktop/GitHub/Hnefatafl/EC551_Project/Control.xst" -ofn "X:/Desktop/GitHub/Hnefatafl/EC551_Project/Control.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pinout.ucf -p xc6slx16-csg324-3 Control.ngc Control.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Control_map.ncd Control.ngd Control.pcf 
+par -w -intstyle ise -ol high -mt off Control_map.ncd Control.ncd Control.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Control.twx Control.ncd -o Control.twr Control.pcf -ucf pinout.ucf 
+bitgen -intstyle ise -f Control.ut Control.ncd 
+xst -intstyle ise -ifn "X:/Desktop/GitHub/Hnefatafl/EC551_Project/Control.xst" -ofn "X:/Desktop/GitHub/Hnefatafl/EC551_Project/Control.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pinout.ucf -p xc6slx16-csg324-3 Control.ngc Control.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Control_map.ncd Control.ngd Control.pcf 
+par -w -intstyle ise -ol high -mt off Control_map.ncd Control.ncd Control.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Control.twx Control.ncd -o Control.twr Control.pcf -ucf pinout.ucf 
+bitgen -intstyle ise -f Control.ut Control.ncd 
+xst -intstyle ise -ifn "X:/Desktop/GitHub/Hnefatafl/EC551_Project/Control.xst" -ofn "X:/Desktop/GitHub/Hnefatafl/EC551_Project/Control.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pinout.ucf -p xc6slx16-csg324-3 Control.ngc Control.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Control_map.ncd Control.ngd Control.pcf 
+par -w -intstyle ise -ol high -mt off Control_map.ncd Control.ncd Control.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Control.twx Control.ncd -o Control.twr Control.pcf -ucf pinout.ucf 
+bitgen -intstyle ise -f Control.ut Control.ncd 
+xst -intstyle ise -ifn "X:/Desktop/GitHub/Hnefatafl/EC551_Project/Control.xst" -ofn "X:/Desktop/GitHub/Hnefatafl/EC551_Project/Control.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pinout.ucf -p xc6slx16-csg324-3 Control.ngc Control.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Control_map.ncd Control.ngd Control.pcf 
+par -w -intstyle ise -ol high -mt off Control_map.ncd Control.ncd Control.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Control.twx Control.ncd -o Control.twr Control.pcf -ucf pinout.ucf 
+bitgen -intstyle ise -f Control.ut Control.ncd 
+xst -intstyle ise -ifn "X:/Desktop/GitHub/Hnefatafl/EC551_Project/Control.xst" -ofn "X:/Desktop/GitHub/Hnefatafl/EC551_Project/Control.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pinout.ucf -p xc6slx16-csg324-3 Control.ngc Control.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Control_map.ncd Control.ngd Control.pcf 
+par -w -intstyle ise -ol high -mt off Control_map.ncd Control.ncd Control.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Control.twx Control.ncd -o Control.twr Control.pcf -ucf pinout.ucf 
+bitgen -intstyle ise -f Control.ut Control.ncd 
+xst -intstyle ise -ifn "X:/Desktop/GitHub/Hnefatafl/EC551_Project/Control.xst" -ofn "X:/Desktop/GitHub/Hnefatafl/EC551_Project/Control.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pinout.ucf -p xc6slx16-csg324-3 Control.ngc Control.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Control_map.ncd Control.ngd Control.pcf 
+par -w -intstyle ise -ol high -mt off Control_map.ncd Control.ncd Control.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Control.twx Control.ncd -o Control.twr Control.pcf -ucf pinout.ucf 
+bitgen -intstyle ise -f Control.ut Control.ncd 
+xst -intstyle ise -ifn "X:/Desktop/GitHub/Hnefatafl/EC551_Project/Control.xst" -ofn "X:/Desktop/GitHub/Hnefatafl/EC551_Project/Control.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pinout.ucf -p xc6slx16-csg324-3 Control.ngc Control.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Control_map.ncd Control.ngd Control.pcf 
+par -w -intstyle ise -ol high -mt off Control_map.ncd Control.ncd Control.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Control.twx Control.ncd -o Control.twr Control.pcf -ucf pinout.ucf 
+bitgen -intstyle ise -f Control.ut Control.ncd 
+xst -intstyle ise -ifn "X:/Desktop/GitHub/Hnefatafl/EC551_Project/Control.xst" -ofn "X:/Desktop/GitHub/Hnefatafl/EC551_Project/Control.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pinout.ucf -p xc6slx16-csg324-3 Control.ngc Control.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Control_map.ncd Control.ngd Control.pcf 
+par -w -intstyle ise -ol high -mt off Control_map.ncd Control.ncd Control.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Control.twx Control.ncd -o Control.twr Control.pcf -ucf pinout.ucf 
+bitgen -intstyle ise -f Control.ut Control.ncd 
+xst -intstyle ise -ifn "X:/Desktop/GitHub/Hnefatafl/EC551_Project/Control.xst" -ofn "X:/Desktop/GitHub/Hnefatafl/EC551_Project/Control.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pinout.ucf -p xc6slx16-csg324-3 Control.ngc Control.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Control_map.ncd Control.ngd Control.pcf 
+par -w -intstyle ise -ol high -mt off Control_map.ncd Control.ncd Control.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Control.twx Control.ncd -o Control.twr Control.pcf -ucf pinout.ucf 
+bitgen -intstyle ise -f Control.ut Control.ncd 
+xst -intstyle ise -ifn "X:/Desktop/GitHub/Hnefatafl/EC551_Project/Control.xst" -ofn "X:/Desktop/GitHub/Hnefatafl/EC551_Project/Control.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pinout.ucf -p xc6slx16-csg324-3 Control.ngc Control.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Control_map.ncd Control.ngd Control.pcf 
+par -w -intstyle ise -ol high -mt off Control_map.ncd Control.ncd Control.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Control.twx Control.ncd -o Control.twr Control.pcf -ucf pinout.ucf 
+bitgen -intstyle ise -f Control.ut Control.ncd 
+xst -intstyle ise -ifn "X:/Desktop/GitHub/Hnefatafl/EC551_Project/Control.xst" -ofn "X:/Desktop/GitHub/Hnefatafl/EC551_Project/Control.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pinout.ucf -p xc6slx16-csg324-3 Control.ngc Control.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Control_map.ncd Control.ngd Control.pcf 
+par -w -intstyle ise -ol high -mt off Control_map.ncd Control.ncd Control.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Control.twx Control.ncd -o Control.twr Control.pcf -ucf pinout.ucf 
+bitgen -intstyle ise -f Control.ut Control.ncd 
+xst -intstyle ise -ifn "X:/Desktop/GitHub/Hnefatafl/EC551_Project/Control.xst" -ofn "X:/Desktop/GitHub/Hnefatafl/EC551_Project/Control.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pinout.ucf -p xc6slx16-csg324-3 Control.ngc Control.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Control_map.ncd Control.ngd Control.pcf 
+par -w -intstyle ise -ol high -mt off Control_map.ncd Control.ncd Control.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Control.twx Control.ncd -o Control.twr Control.pcf -ucf pinout.ucf 
+bitgen -intstyle ise -f Control.ut Control.ncd 
+xst -intstyle ise -ifn "X:/Desktop/GitHub/Hnefatafl/EC551_Project/Control.xst" -ofn "X:/Desktop/GitHub/Hnefatafl/EC551_Project/Control.syr" 
+xst -intstyle ise -ifn "X:/Desktop/GitHub/Hnefatafl/EC551_Project/Control.xst" -ofn "X:/Desktop/GitHub/Hnefatafl/EC551_Project/Control.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pinout.ucf -p xc6slx16-csg324-3 Control.ngc Control.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Control_map.ncd Control.ngd Control.pcf 
+par -w -intstyle ise -ol high -mt off Control_map.ncd Control.ncd Control.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Control.twx Control.ncd -o Control.twr Control.pcf -ucf pinout.ucf 
+bitgen -intstyle ise -f Control.ut Control.ncd 
+xst -intstyle ise -ifn "X:/Desktop/GitHub/Hnefatafl/EC551_Project/Control.xst" -ofn "X:/Desktop/GitHub/Hnefatafl/EC551_Project/Control.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pinout.ucf -p xc6slx16-csg324-3 Control.ngc Control.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Control_map.ncd Control.ngd Control.pcf 
+par -w -intstyle ise -ol high -mt off Control_map.ncd Control.ncd Control.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Control.twx Control.ncd -o Control.twr Control.pcf -ucf pinout.ucf 
+bitgen -intstyle ise -f Control.ut Control.ncd 
+xst -intstyle ise -ifn "X:/Desktop/GitHub/Hnefatafl/EC551_Project/Control.xst" -ofn "X:/Desktop/GitHub/Hnefatafl/EC551_Project/Control.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pinout.ucf -p xc6slx16-csg324-3 Control.ngc Control.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Control_map.ncd Control.ngd Control.pcf 
+par -w -intstyle ise -ol high -mt off Control_map.ncd Control.ncd Control.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Control.twx Control.ncd -o Control.twr Control.pcf -ucf pinout.ucf 
+bitgen -intstyle ise -f Control.ut Control.ncd 
+xst -intstyle ise -ifn "X:/Desktop/GitHub/Hnefatafl/EC551_Project/Control.xst" -ofn "X:/Desktop/GitHub/Hnefatafl/EC551_Project/Control.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pinout.ucf -p xc6slx16-csg324-3 Control.ngc Control.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Control_map.ncd Control.ngd Control.pcf 
+par -w -intstyle ise -ol high -mt off Control_map.ncd Control.ncd Control.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Control.twx Control.ncd -o Control.twr Control.pcf -ucf pinout.ucf 
+bitgen -intstyle ise -f Control.ut Control.ncd 
+xst -intstyle ise -ifn "X:/Desktop/GitHub/Hnefatafl/EC551_Project/Control.xst" -ofn "X:/Desktop/GitHub/Hnefatafl/EC551_Project/Control.syr" 
+xst -intstyle ise -ifn "X:/Desktop/GitHub/Hnefatafl/EC551_Project/Control.xst" -ofn "X:/Desktop/GitHub/Hnefatafl/EC551_Project/Control.syr" 
+xst -intstyle ise -ifn "X:/Desktop/GitHub/Hnefatafl/EC551_Project/Control.xst" -ofn "X:/Desktop/GitHub/Hnefatafl/EC551_Project/Control.syr" 
+xst -intstyle ise -ifn "X:/Desktop/GitHub/Hnefatafl/EC551_Project/Control.xst" -ofn "X:/Desktop/GitHub/Hnefatafl/EC551_Project/Control.syr" 
+xst -intstyle ise -ifn "X:/Desktop/GitHub/Hnefatafl/EC551_Project/Control.xst" -ofn "X:/Desktop/GitHub/Hnefatafl/EC551_Project/Control.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pinout.ucf -p xc6slx16-csg324-3 Control.ngc Control.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Control_map.ncd Control.ngd Control.pcf 
+par -w -intstyle ise -ol high -mt off Control_map.ncd Control.ncd Control.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Control.twx Control.ncd -o Control.twr Control.pcf -ucf pinout.ucf 
+bitgen -intstyle ise -f Control.ut Control.ncd 
+xst -intstyle ise -ifn "X:/Desktop/GitHub/Hnefatafl/EC551_Project/Control.xst" -ofn "X:/Desktop/GitHub/Hnefatafl/EC551_Project/Control.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pinout.ucf -p xc6slx16-csg324-3 Control.ngc Control.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Control_map.ncd Control.ngd Control.pcf 
+par -w -intstyle ise -ol high -mt off Control_map.ncd Control.ncd Control.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Control.twx Control.ncd -o Control.twr Control.pcf -ucf pinout.ucf 
+bitgen -intstyle ise -f Control.ut Control.ncd 
+xst -intstyle ise -ifn "X:/Desktop/GitHub/Hnefatafl/EC551_Project/Control.xst" -ofn "X:/Desktop/GitHub/Hnefatafl/EC551_Project/Control.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pinout.ucf -p xc6slx16-csg324-3 Control.ngc Control.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Control_map.ncd Control.ngd Control.pcf 
+par -w -intstyle ise -ol high -mt off Control_map.ncd Control.ncd Control.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Control.twx Control.ncd -o Control.twr Control.pcf -ucf pinout.ucf 
+bitgen -intstyle ise -f Control.ut Control.ncd 
+xst -intstyle ise -ifn "X:/Desktop/GitHub/Hnefatafl/EC551_Project/Control.xst" -ofn "X:/Desktop/GitHub/Hnefatafl/EC551_Project/Control.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pinout.ucf -p xc6slx16-csg324-3 Control.ngc Control.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Control_map.ncd Control.ngd Control.pcf 
+par -w -intstyle ise -ol high -mt off Control_map.ncd Control.ncd Control.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Control.twx Control.ncd -o Control.twr Control.pcf -ucf pinout.ucf 
+bitgen -intstyle ise -f Control.ut Control.ncd 
+xst -intstyle ise -ifn "X:/Desktop/GitHub/Hnefatafl/EC551_Project/Control.xst" -ofn "X:/Desktop/GitHub/Hnefatafl/EC551_Project/Control.syr" 
+xst -intstyle ise -ifn "E:/Hnefatafl/EC551_Project/Control.xst" -ofn "E:/Hnefatafl/EC551_Project/Control.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pinout.ucf -p xc6slx16-csg324-3 Control.ngc Control.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Control_map.ncd Control.ngd Control.pcf 
+par -w -intstyle ise -ol high -mt off Control_map.ncd Control.ncd Control.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Control.twx Control.ncd -o Control.twr Control.pcf -ucf pinout.ucf 
+bitgen -intstyle ise -f Control.ut Control.ncd 
+xst -intstyle ise -ifn "E:/Hnefatafl/EC551_Project/Control.xst" -ofn "E:/Hnefatafl/EC551_Project/Control.syr" 
+xst -intstyle ise -ifn "E:/Hnefatafl/EC551_Project/Control.xst" -ofn "E:/Hnefatafl/EC551_Project/Control.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pinout.ucf -p xc6slx16-csg324-3 Control.ngc Control.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Control_map.ncd Control.ngd Control.pcf 
+par -w -intstyle ise -ol high -mt off Control_map.ncd Control.ncd Control.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Control.twx Control.ncd -o Control.twr Control.pcf -ucf pinout.ucf 
+bitgen -intstyle ise -f Control.ut Control.ncd 
+xst -intstyle ise -ifn "E:/Hnefatafl/EC551_Project/Control.xst" -ofn "E:/Hnefatafl/EC551_Project/Control.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pinout.ucf -p xc6slx16-csg324-3 Control.ngc Control.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Control_map.ncd Control.ngd Control.pcf 
+par -w -intstyle ise -ol high -mt off Control_map.ncd Control.ncd Control.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Control.twx Control.ncd -o Control.twr Control.pcf -ucf pinout.ucf 
+bitgen -intstyle ise -f Control.ut Control.ncd 
+xst -intstyle ise -ifn "E:/Hnefatafl/EC551_Project/Control.xst" -ofn "E:/Hnefatafl/EC551_Project/Control.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pinout.ucf -p xc6slx16-csg324-3 Control.ngc Control.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Control_map.ncd Control.ngd Control.pcf 
+par -w -intstyle ise -ol high -mt off Control_map.ncd Control.ncd Control.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Control.twx Control.ncd -o Control.twr Control.pcf -ucf pinout.ucf 
+bitgen -intstyle ise -f Control.ut Control.ncd 
+xst -intstyle ise -ifn "E:/Hnefatafl/EC551_Project/Control.xst" -ofn "E:/Hnefatafl/EC551_Project/Control.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pinout.ucf -p xc6slx16-csg324-3 Control.ngc Control.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Control_map.ncd Control.ngd Control.pcf 
+par -w -intstyle ise -ol high -mt off Control_map.ncd Control.ncd Control.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Control.twx Control.ncd -o Control.twr Control.pcf -ucf pinout.ucf 
+bitgen -intstyle ise -f Control.ut Control.ncd 
+xst -intstyle ise -ifn "E:/Hnefatafl/EC551_Project/Control.xst" -ofn "E:/Hnefatafl/EC551_Project/Control.syr" 
+xst -intstyle ise -ifn "E:/Hnefatafl/EC551_Project/Control.xst" -ofn "E:/Hnefatafl/EC551_Project/Control.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pinout.ucf -p xc6slx16-csg324-3 Control.ngc Control.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Control_map.ncd Control.ngd Control.pcf 
+par -w -intstyle ise -ol high -mt off Control_map.ncd Control.ncd Control.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Control.twx Control.ncd -o Control.twr Control.pcf -ucf pinout.ucf 
+bitgen -intstyle ise -f Control.ut Control.ncd 
+xst -intstyle ise -ifn "E:/Hnefatafl/EC551_Project/Control.xst" -ofn "E:/Hnefatafl/EC551_Project/Control.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pinout.ucf -p xc6slx16-csg324-3 Control.ngc Control.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Control_map.ncd Control.ngd Control.pcf 
+par -w -intstyle ise -ol high -mt off Control_map.ncd Control.ncd Control.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Control.twx Control.ncd -o Control.twr Control.pcf -ucf pinout.ucf 
+bitgen -intstyle ise -f Control.ut Control.ncd 
+xst -intstyle ise -ifn "E:/Hnefatafl/EC551_Project/Control.xst" -ofn "E:/Hnefatafl/EC551_Project/Control.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pinout.ucf -p xc6slx16-csg324-3 Control.ngc Control.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Control_map.ncd Control.ngd Control.pcf 
+par -w -intstyle ise -ol high -mt off Control_map.ncd Control.ncd Control.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Control.twx Control.ncd -o Control.twr Control.pcf -ucf pinout.ucf 
+bitgen -intstyle ise -f Control.ut Control.ncd 
+xst -intstyle ise -ifn "E:/Hnefatafl/EC551_Project/Control.xst" -ofn "E:/Hnefatafl/EC551_Project/Control.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pinout.ucf -p xc6slx16-csg324-3 Control.ngc Control.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Control_map.ncd Control.ngd Control.pcf 
+par -w -intstyle ise -ol high -mt off Control_map.ncd Control.ncd Control.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Control.twx Control.ncd -o Control.twr Control.pcf -ucf pinout.ucf 
+bitgen -intstyle ise -f Control.ut Control.ncd 
+xst -intstyle ise -ifn "E:/Hnefatafl/EC551_Project/Control.xst" -ofn "E:/Hnefatafl/EC551_Project/Control.syr" 
+xst -intstyle ise -ifn "E:/Hnefatafl/EC551_Project/Control.xst" -ofn "E:/Hnefatafl/EC551_Project/Control.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pinout.ucf -p xc6slx16-csg324-3 Control.ngc Control.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Control_map.ncd Control.ngd Control.pcf 
+par -w -intstyle ise -ol high -mt off Control_map.ncd Control.ncd Control.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Control.twx Control.ncd -o Control.twr Control.pcf -ucf pinout.ucf 
+bitgen -intstyle ise -f Control.ut Control.ncd 
+xst -intstyle ise -ifn "E:/Hnefatafl/EC551_Project/Control.xst" -ofn "E:/Hnefatafl/EC551_Project/Control.syr" 
+xst -intstyle ise -ifn "E:/Hnefatafl/EC551_Project/Control.xst" -ofn "E:/Hnefatafl/EC551_Project/Control.syr" 
+xst -intstyle ise -ifn "E:/Hnefatafl/EC551_Project/Control.xst" -ofn "E:/Hnefatafl/EC551_Project/Control.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pinout.ucf -p xc6slx16-csg324-3 Control.ngc Control.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol std -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt 2 -ir off -pr off -lc off -power off -o Control_map.ncd Control.ngd Control.pcf 
+par -w -intstyle ise -ol std -mt 2 Control_map.ncd Control.ncd Control.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Control.twx Control.ncd -o Control.twr Control.pcf -ucf pinout.ucf 
+bitgen -intstyle ise -f Control.ut Control.ncd 
+xst -intstyle ise -ifn "E:/Hnefatafl/EC551_Project/Control.xst" -ofn "E:/Hnefatafl/EC551_Project/Control.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pinout.ucf -p xc6slx16-csg324-3 Control.ngc Control.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol std -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt 2 -ir off -pr off -lc off -power off -o Control_map.ncd Control.ngd Control.pcf 
+par -w -intstyle ise -ol std -mt 2 Control_map.ncd Control.ncd Control.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Control.twx Control.ncd -o Control.twr Control.pcf -ucf pinout.ucf 
+bitgen -intstyle ise -f Control.ut Control.ncd 
+xst -intstyle ise -ifn "E:/Hnefatafl/EC551_Project/Control.xst" -ofn "E:/Hnefatafl/EC551_Project/Control.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pinout.ucf -p xc6slx16-csg324-3 Control.ngc Control.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol std -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt 2 -ir off -pr off -lc off -power off -o Control_map.ncd Control.ngd Control.pcf 
+par -w -intstyle ise -ol std -mt 2 Control_map.ncd Control.ncd Control.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Control.twx Control.ncd -o Control.twr Control.pcf -ucf pinout.ucf 
+bitgen -intstyle ise -f Control.ut Control.ncd 
+xst -intstyle ise -ifn "E:/Hnefatafl/EC551_Project/Control.xst" -ofn "E:/Hnefatafl/EC551_Project/Control.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pinout.ucf -p xc6slx16-csg324-3 Control.ngc Control.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol std -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt 2 -ir off -pr off -lc off -power off -o Control_map.ncd Control.ngd Control.pcf 
+par -w -intstyle ise -ol std -mt 2 Control_map.ncd Control.ncd Control.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Control.twx Control.ncd -o Control.twr Control.pcf -ucf pinout.ucf 
+bitgen -intstyle ise -f Control.ut Control.ncd 
+xst -intstyle ise -ifn "E:/Hnefatafl/EC551_Project/Control.xst" -ofn "E:/Hnefatafl/EC551_Project/Control.syr" 
+xst -intstyle ise -ifn "E:/Hnefatafl/EC551_Project/Control.xst" -ofn "E:/Hnefatafl/EC551_Project/Control.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pinout.ucf -p xc6slx16-csg324-3 Control.ngc Control.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol std -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt 2 -ir off -pr off -lc off -power off -o Control_map.ncd Control.ngd Control.pcf 
+par -w -intstyle ise -ol std -mt 2 Control_map.ncd Control.ncd Control.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Control.twx Control.ncd -o Control.twr Control.pcf -ucf pinout.ucf 
+bitgen -intstyle ise -f Control.ut Control.ncd 
+xst -intstyle ise -ifn "E:/Hnefatafl/EC551_Project/Control.xst" -ofn "E:/Hnefatafl/EC551_Project/Control.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pinout.ucf -p xc6slx16-csg324-3 Control.ngc Control.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol std -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt 2 -ir off -pr off -lc off -power off -o Control_map.ncd Control.ngd Control.pcf 
+par -w -intstyle ise -ol std -mt 2 Control_map.ncd Control.ncd Control.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Control.twx Control.ncd -o Control.twr Control.pcf -ucf pinout.ucf 
+bitgen -intstyle ise -f Control.ut Control.ncd 
+xst -intstyle ise -ifn "E:/Hnefatafl/EC551_Project/Control.xst" -ofn "E:/Hnefatafl/EC551_Project/Control.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pinout.ucf -p xc6slx16-csg324-3 Control.ngc Control.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol std -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt 2 -ir off -pr off -lc off -power off -o Control_map.ncd Control.ngd Control.pcf 
+par -w -intstyle ise -ol std -mt 2 Control_map.ncd Control.ncd Control.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Control.twx Control.ncd -o Control.twr Control.pcf -ucf pinout.ucf 
+bitgen -intstyle ise -f Control.ut Control.ncd 
+xst -intstyle ise -ifn "E:/Hnefatafl/EC551_Project/Control.xst" -ofn "E:/Hnefatafl/EC551_Project/Control.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pinout.ucf -p xc6slx16-csg324-3 Control.ngc Control.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol std -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt 2 -ir off -pr off -lc off -power off -o Control_map.ncd Control.ngd Control.pcf 
+par -w -intstyle ise -ol std -mt 2 Control_map.ncd Control.ncd Control.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Control.twx Control.ncd -o Control.twr Control.pcf -ucf pinout.ucf 
+bitgen -intstyle ise -f Control.ut Control.ncd 
+xst -intstyle ise -ifn "E:/Hnefatafl/EC551_Project/Control.xst" -ofn "E:/Hnefatafl/EC551_Project/Control.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pinout.ucf -p xc6slx16-csg324-3 Control.ngc Control.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol std -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt 2 -ir off -pr off -lc off -power off -o Control_map.ncd Control.ngd Control.pcf 
+par -w -intstyle ise -ol std -mt 2 Control_map.ncd Control.ncd Control.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Control.twx Control.ncd -o Control.twr Control.pcf -ucf pinout.ucf 
+bitgen -intstyle ise -f Control.ut Control.ncd 
+xst -intstyle ise -ifn "E:/Hnefatafl/EC551_Project/Control.xst" -ofn "E:/Hnefatafl/EC551_Project/Control.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pinout.ucf -p xc6slx16-csg324-3 Control.ngc Control.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol std -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt 2 -ir off -pr off -lc off -power off -o Control_map.ncd Control.ngd Control.pcf 
+par -w -intstyle ise -ol std -mt 2 Control_map.ncd Control.ncd Control.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Control.twx Control.ncd -o Control.twr Control.pcf -ucf pinout.ucf 
+bitgen -intstyle ise -f Control.ut Control.ncd 
+xst -intstyle ise -ifn "E:/Hnefatafl/EC551_Project/Control.xst" -ofn "E:/Hnefatafl/EC551_Project/Control.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pinout.ucf -p xc6slx16-csg324-3 Control.ngc Control.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol std -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt 2 -ir off -pr off -lc off -power off -o Control_map.ncd Control.ngd Control.pcf 
+par -w -intstyle ise -ol std -mt 2 Control_map.ncd Control.ncd Control.pcf 
+xst -intstyle ise -ifn "E:/Hnefatafl/EC551_Project/Control.xst" -ofn "E:/Hnefatafl/EC551_Project/Control.syr" 
+par -w -intstyle ise -ol std -mt 2 Control_map.ncd Control.ncd Control.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Control.twx Control.ncd -o Control.twr Control.pcf -ucf pinout.ucf 
+bitgen -intstyle ise -f Control.ut Control.ncd 
+xst -intstyle ise -ifn "E:/Hnefatafl/EC551_Project/Control.xst" -ofn "E:/Hnefatafl/EC551_Project/Control.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pinout.ucf -p xc6slx16-csg324-3 Control.ngc Control.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol std -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt 2 -ir off -pr off -lc off -power off -o Control_map.ncd Control.ngd Control.pcf 
+par -w -intstyle ise -ol std -mt 2 Control_map.ncd Control.ncd Control.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Control.twx Control.ncd -o Control.twr Control.pcf -ucf pinout.ucf 
+bitgen -intstyle ise -f Control.ut Control.ncd 
+xst -intstyle ise -ifn "E:/Hnefatafl/EC551_Project/Control.xst" -ofn "E:/Hnefatafl/EC551_Project/Control.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pinout.ucf -p xc6slx16-csg324-3 Control.ngc Control.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol std -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt 2 -ir off -pr off -lc off -power off -o Control_map.ncd Control.ngd Control.pcf 
+par -w -intstyle ise -ol std -mt 2 Control_map.ncd Control.ncd Control.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Control.twx Control.ncd -o Control.twr Control.pcf -ucf pinout.ucf 
+bitgen -intstyle ise -f Control.ut Control.ncd 
+xst -intstyle ise -ifn "E:/Hnefatafl/EC551_Project/Control.xst" -ofn "E:/Hnefatafl/EC551_Project/Control.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pinout.ucf -p xc6slx16-csg324-3 Control.ngc Control.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol std -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt 2 -ir off -pr off -lc off -power off -o Control_map.ncd Control.ngd Control.pcf 
+par -w -intstyle ise -ol std -mt 2 Control_map.ncd Control.ncd Control.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Control.twx Control.ncd -o Control.twr Control.pcf -ucf pinout.ucf 
+bitgen -intstyle ise -f Control.ut Control.ncd 
+xst -intstyle ise -ifn "E:/Hnefatafl/EC551_Project/Control.xst" -ofn "E:/Hnefatafl/EC551_Project/Control.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pinout.ucf -p xc6slx16-csg324-3 Control.ngc Control.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol std -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt 2 -ir off -pr off -lc off -power off -o Control_map.ncd Control.ngd Control.pcf 
+par -w -intstyle ise -ol std -mt 2 Control_map.ncd Control.ncd Control.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Control.twx Control.ncd -o Control.twr Control.pcf -ucf pinout.ucf 
+bitgen -intstyle ise -f Control.ut Control.ncd 
+xst -intstyle ise -ifn "E:/Hnefatafl/EC551_Project/Control.xst" -ofn "E:/Hnefatafl/EC551_Project/Control.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pinout.ucf -p xc6slx16-csg324-3 Control.ngc Control.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol std -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt 2 -ir off -pr off -lc off -power off -o Control_map.ncd Control.ngd Control.pcf 
+par -w -intstyle ise -ol std -mt 2 Control_map.ncd Control.ncd Control.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Control.twx Control.ncd -o Control.twr Control.pcf -ucf pinout.ucf 
+bitgen -intstyle ise -f Control.ut Control.ncd 
+xst -intstyle ise -ifn "E:/Hnefatafl/EC551_Project/Control.xst" -ofn "E:/Hnefatafl/EC551_Project/Control.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pinout.ucf -p xc6slx16-csg324-3 Control.ngc Control.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol std -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt 2 -ir off -pr off -lc off -power off -o Control_map.ncd Control.ngd Control.pcf 
+par -w -intstyle ise -ol std -mt 2 Control_map.ncd Control.ncd Control.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Control.twx Control.ncd -o Control.twr Control.pcf -ucf pinout.ucf 
+bitgen -intstyle ise -f Control.ut Control.ncd 
+xst -intstyle ise -ifn "E:/Hnefatafl/EC551_Project/Control.xst" -ofn "E:/Hnefatafl/EC551_Project/Control.syr" 
+xst -intstyle ise -ifn "E:/Hnefatafl/EC551_Project/Control.xst" -ofn "E:/Hnefatafl/EC551_Project/Control.syr" 
+xst -intstyle ise -ifn "E:/Hnefatafl/EC551_Project/Control.xst" -ofn "E:/Hnefatafl/EC551_Project/Control.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pinout.ucf -p xc6slx16-csg324-3 Control.ngc Control.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol std -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt 2 -ir off -pr off -lc off -power off -o Control_map.ncd Control.ngd Control.pcf 
+par -w -intstyle ise -ol std -mt 2 Control_map.ncd Control.ncd Control.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Control.twx Control.ncd -o Control.twr Control.pcf -ucf pinout.ucf 
+bitgen -intstyle ise -f Control.ut Control.ncd 
+xst -intstyle ise -ifn "E:/Hnefatafl/EC551_Project/Control.xst" -ofn "E:/Hnefatafl/EC551_Project/Control.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pinout.ucf -p xc6slx16-csg324-3 Control.ngc Control.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol std -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt 2 -ir off -pr off -lc off -power off -o Control_map.ncd Control.ngd Control.pcf 
+par -w -intstyle ise -ol std -mt 2 Control_map.ncd Control.ncd Control.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Control.twx Control.ncd -o Control.twr Control.pcf -ucf pinout.ucf 
+bitgen -intstyle ise -f Control.ut Control.ncd 
+xst -intstyle ise -ifn "E:/Hnefatafl/EC551_Project/Control.xst" -ofn "E:/Hnefatafl/EC551_Project/Control.syr" 
+xst -intstyle ise -ifn "E:/Hnefatafl/EC551_Project/Control.xst" -ofn "E:/Hnefatafl/EC551_Project/Control.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pinout.ucf -p xc6slx16-csg324-3 Control.ngc Control.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pinout.ucf -p xc6slx16-csg324-3 Control.ngc Control.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol std -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt 2 -ir off -pr off -lc off -power off -o Control_map.ncd Control.ngd Control.pcf 
+par -w -intstyle ise -ol std -mt 2 Control_map.ncd Control.ncd Control.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Control.twx Control.ncd -o Control.twr Control.pcf -ucf pinout.ucf 
+bitgen -intstyle ise -f Control.ut Control.ncd 
+xst -intstyle ise -ifn "E:/Hnefatafl/EC551_Project/Control.xst" -ofn "E:/Hnefatafl/EC551_Project/Control.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pinout.ucf -p xc6slx16-csg324-3 Control.ngc Control.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol std -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt 2 -ir off -pr off -lc off -power off -o Control_map.ncd Control.ngd Control.pcf 
+par -w -intstyle ise -ol std -mt 2 Control_map.ncd Control.ncd Control.pcf 
+bitgen -intstyle ise -f Control.ut Control.ncd 
+xst -intstyle ise -ifn "E:/Hnefatafl/EC551_Project/Control.xst" -ofn "E:/Hnefatafl/EC551_Project/Control.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pinout.ucf -p xc6slx16-csg324-3 Control.ngc Control.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol std -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt 2 -ir off -pr off -lc off -power off -o Control_map.ncd Control.ngd Control.pcf 
+par -w -intstyle ise -ol std -mt 2 Control_map.ncd Control.ncd Control.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Control.twx Control.ncd -o Control.twr Control.pcf -ucf pinout.ucf 
+bitgen -intstyle ise -f Control.ut Control.ncd 
+xst -intstyle ise -ifn "E:/Hnefatafl/EC551_Project/Control.xst" -ofn "E:/Hnefatafl/EC551_Project/Control.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pinout.ucf -p xc6slx16-csg324-3 Control.ngc Control.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol std -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt 2 -ir off -pr off -lc off -power off -o Control_map.ncd Control.ngd Control.pcf 
+par -w -intstyle ise -ol std -mt 2 Control_map.ncd Control.ncd Control.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Control.twx Control.ncd -o Control.twr Control.pcf -ucf pinout.ucf 
+bitgen -intstyle ise -f Control.ut Control.ncd 
+xst -intstyle ise -ifn "E:/Hnefatafl/EC551_Project/Control.xst" -ofn "E:/Hnefatafl/EC551_Project/Control.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pinout.ucf -p xc6slx16-csg324-3 Control.ngc Control.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol std -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt 2 -ir off -pr off -lc off -power off -o Control_map.ncd Control.ngd Control.pcf 
+par -w -intstyle ise -ol std -mt 2 Control_map.ncd Control.ncd Control.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Control.twx Control.ncd -o Control.twr Control.pcf -ucf pinout.ucf 
+bitgen -intstyle ise -f Control.ut Control.ncd 
+xst -intstyle ise -ifn "E:/Hnefatafl/EC551_Project/Control.xst" -ofn "E:/Hnefatafl/EC551_Project/Control.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pinout.ucf -p xc6slx16-csg324-3 Control.ngc Control.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol std -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt 2 -ir off -pr off -lc off -power off -o Control_map.ncd Control.ngd Control.pcf 
+par -w -intstyle ise -ol std -mt 2 Control_map.ncd Control.ncd Control.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Control.twx Control.ncd -o Control.twr Control.pcf -ucf pinout.ucf 
+bitgen -intstyle ise -f Control.ut Control.ncd 
+xst -intstyle ise -ifn "E:/Hnefatafl/EC551_Project/Control.xst" -ofn "E:/Hnefatafl/EC551_Project/Control.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pinout.ucf -p xc6slx16-csg324-3 Control.ngc Control.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol std -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt 2 -ir off -pr off -lc off -power off -o Control_map.ncd Control.ngd Control.pcf 
+par -w -intstyle ise -ol std -mt 2 Control_map.ncd Control.ncd Control.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Control.twx Control.ncd -o Control.twr Control.pcf -ucf pinout.ucf 
+bitgen -intstyle ise -f Control.ut Control.ncd 
+xst -intstyle ise -ifn "E:/Hnefatafl/EC551_Project/Control.xst" -ofn "E:/Hnefatafl/EC551_Project/Control.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pinout.ucf -p xc6slx16-csg324-3 Control.ngc Control.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol std -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt 2 -ir off -pr off -lc off -power off -o Control_map.ncd Control.ngd Control.pcf 
+par -w -intstyle ise -ol std -mt 2 Control_map.ncd Control.ncd Control.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Control.twx Control.ncd -o Control.twr Control.pcf -ucf pinout.ucf 
+bitgen -intstyle ise -f Control.ut Control.ncd 
+xst -intstyle ise -ifn "E:/Hnefatafl/EC551_Project/Control.xst" -ofn "E:/Hnefatafl/EC551_Project/Control.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pinout.ucf -p xc6slx16-csg324-3 Control.ngc Control.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol std -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt 2 -ir off -pr off -lc off -power off -o Control_map.ncd Control.ngd Control.pcf 
+par -w -intstyle ise -ol std -mt 2 Control_map.ncd Control.ncd Control.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Control.twx Control.ncd -o Control.twr Control.pcf -ucf pinout.ucf 
+bitgen -intstyle ise -f Control.ut Control.ncd 
+xst -intstyle ise -ifn "E:/Hnefatafl/EC551_Project/Control.xst" -ofn "E:/Hnefatafl/EC551_Project/Control.syr" 
+xst -intstyle ise -ifn "E:/Hnefatafl/EC551_Project/Control.xst" -ofn "E:/Hnefatafl/EC551_Project/Control.syr" 
+xst -intstyle ise -ifn "E:/Hnefatafl/EC551_Project/Control.xst" -ofn "E:/Hnefatafl/EC551_Project/Control.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pinout.ucf -p xc6slx16-csg324-3 Control.ngc Control.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol std -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt 2 -ir off -pr off -lc off -power off -o Control_map.ncd Control.ngd Control.pcf 
+par -w -intstyle ise -ol std -mt 2 Control_map.ncd Control.ncd Control.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Control.twx Control.ncd -o Control.twr Control.pcf -ucf pinout.ucf 
+bitgen -intstyle ise -f Control.ut Control.ncd 
+xst -intstyle ise -ifn "E:/Hnefatafl/EC551_Project/Control.xst" -ofn "E:/Hnefatafl/EC551_Project/Control.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pinout.ucf -p xc6slx16-csg324-3 Control.ngc Control.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol std -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt 2 -ir off -pr off -lc off -power off -o Control_map.ncd Control.ngd Control.pcf 
+par -w -intstyle ise -ol std -mt 2 Control_map.ncd Control.ncd Control.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Control.twx Control.ncd -o Control.twr Control.pcf -ucf pinout.ucf 
+bitgen -intstyle ise -f Control.ut Control.ncd 
+xst -intstyle ise -ifn "E:/Hnefatafl/EC551_Project/Control.xst" -ofn "E:/Hnefatafl/EC551_Project/Control.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pinout.ucf -p xc6slx16-csg324-3 Control.ngc Control.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol std -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt 2 -ir off -pr off -lc off -power off -o Control_map.ncd Control.ngd Control.pcf 
+par -w -intstyle ise -ol std -mt 2 Control_map.ncd Control.ncd Control.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Control.twx Control.ncd -o Control.twr Control.pcf -ucf pinout.ucf 
+bitgen -intstyle ise -f Control.ut Control.ncd 
+xst -intstyle ise -ifn "E:/Hnefatafl/EC551_Project/Control.xst" -ofn "E:/Hnefatafl/EC551_Project/Control.syr" 
+xst -intstyle ise -ifn "E:/Hnefatafl/EC551_Project/Control.xst" -ofn "E:/Hnefatafl/EC551_Project/Control.syr" 
+xst -intstyle ise -ifn "E:/Hnefatafl/EC551_Project/Control.xst" -ofn "E:/Hnefatafl/EC551_Project/Control.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pinout.ucf -p xc6slx16-csg324-3 Control.ngc Control.ngd  
+xst -intstyle ise -ifn "E:/Hnefatafl/EC551_Project/Control.xst" -ofn "E:/Hnefatafl/EC551_Project/Control.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pinout.ucf -p xc6slx16-csg324-3 Control.ngc Control.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol std -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt 2 -ir off -pr off -lc off -power off -o Control_map.ncd Control.ngd Control.pcf 
+par -w -intstyle ise -ol std -mt 2 Control_map.ncd Control.ncd Control.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Control.twx Control.ncd -o Control.twr Control.pcf -ucf pinout.ucf 
+bitgen -intstyle ise -f Control.ut Control.ncd 
+xst -intstyle ise -ifn "E:/Hnefatafl/EC551_Project/Control.xst" -ofn "E:/Hnefatafl/EC551_Project/Control.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pinout.ucf -p xc6slx16-csg324-3 Control.ngc Control.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol std -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt 2 -ir off -pr off -lc off -power off -o Control_map.ncd Control.ngd Control.pcf 
+par -w -intstyle ise -ol std -mt 2 Control_map.ncd Control.ncd Control.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Control.twx Control.ncd -o Control.twr Control.pcf -ucf pinout.ucf 
+bitgen -intstyle ise -f Control.ut Control.ncd 
+xst -intstyle ise -ifn "E:/Hnefatafl/EC551_Project/Control.xst" -ofn "E:/Hnefatafl/EC551_Project/Control.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pinout.ucf -p xc6slx16-csg324-3 Control.ngc Control.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol std -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt 2 -ir off -pr off -lc off -power off -o Control_map.ncd Control.ngd Control.pcf 
+par -w -intstyle ise -ol std -mt 2 Control_map.ncd Control.ncd Control.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Control.twx Control.ncd -o Control.twr Control.pcf -ucf pinout.ucf 
+bitgen -intstyle ise -f Control.ut Control.ncd 
+xst -intstyle ise -ifn "E:/Hnefatafl/EC551_Project/Control.xst" -ofn "E:/Hnefatafl/EC551_Project/Control.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pinout.ucf -p xc6slx16-csg324-3 Control.ngc Control.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol std -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt 2 -ir off -pr off -lc off -power off -o Control_map.ncd Control.ngd Control.pcf 
+par -w -intstyle ise -ol std -mt 2 Control_map.ncd Control.ncd Control.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Control.twx Control.ncd -o Control.twr Control.pcf -ucf pinout.ucf 
+bitgen -intstyle ise -f Control.ut Control.ncd 
+xst -intstyle ise -ifn "E:/Hnefatafl/EC551_Project/Control.xst" -ofn "E:/Hnefatafl/EC551_Project/Control.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pinout.ucf -p xc6slx16-csg324-3 Control.ngc Control.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol std -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt 2 -ir off -pr off -lc off -power off -o Control_map.ncd Control.ngd Control.pcf 
+par -w -intstyle ise -ol std -mt 2 Control_map.ncd Control.ncd Control.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Control.twx Control.ncd -o Control.twr Control.pcf -ucf pinout.ucf 
+bitgen -intstyle ise -f Control.ut Control.ncd 
+xst -intstyle ise -ifn "E:/Hnefatafl/EC551_Project/Control.xst" -ofn "E:/Hnefatafl/EC551_Project/Control.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pinout.ucf -p xc6slx16-csg324-3 Control.ngc Control.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol std -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt 2 -ir off -pr off -lc off -power off -o Control_map.ncd Control.ngd Control.pcf 
+par -w -intstyle ise -ol std -mt 2 Control_map.ncd Control.ncd Control.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Control.twx Control.ncd -o Control.twr Control.pcf -ucf pinout.ucf 
+bitgen -intstyle ise -f Control.ut Control.ncd 
+xst -intstyle ise -ifn "E:/Hnefatafl/EC551_Project/Control.xst" -ofn "E:/Hnefatafl/EC551_Project/Control.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pinout.ucf -p xc6slx16-csg324-3 Control.ngc Control.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol std -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt 2 -ir off -pr off -lc off -power off -o Control_map.ncd Control.ngd Control.pcf 
+par -w -intstyle ise -ol std -mt 2 Control_map.ncd Control.ncd Control.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Control.twx Control.ncd -o Control.twr Control.pcf -ucf pinout.ucf 
+bitgen -intstyle ise -f Control.ut Control.ncd 
+xst -intstyle ise -ifn "E:/Hnefatafl/EC551_Project/Control.xst" -ofn "E:/Hnefatafl/EC551_Project/Control.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pinout.ucf -p xc6slx16-csg324-3 Control.ngc Control.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol std -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt 2 -ir off -pr off -lc off -power off -o Control_map.ncd Control.ngd Control.pcf 
+par -w -intstyle ise -ol std -mt 2 Control_map.ncd Control.ncd Control.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Control.twx Control.ncd -o Control.twr Control.pcf -ucf pinout.ucf 
+bitgen -intstyle ise -f Control.ut Control.ncd 
+xst -intstyle ise -ifn "E:/Hnefatafl/EC551_Project/Control.xst" -ofn "E:/Hnefatafl/EC551_Project/Control.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pinout.ucf -p xc6slx16-csg324-3 Control.ngc Control.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol std -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt 2 -ir off -pr off -lc off -power off -o Control_map.ncd Control.ngd Control.pcf 
+par -w -intstyle ise -ol std -mt 2 Control_map.ncd Control.ncd Control.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Control.twx Control.ncd -o Control.twr Control.pcf -ucf pinout.ucf 
+bitgen -intstyle ise -f Control.ut Control.ncd 
+xst -intstyle ise -ifn "E:/Hnefatafl/EC551_Project/Control.xst" -ofn "E:/Hnefatafl/EC551_Project/Control.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pinout.ucf -p xc6slx16-csg324-3 Control.ngc Control.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol std -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt 2 -ir off -pr off -lc off -power off -o Control_map.ncd Control.ngd Control.pcf 
+par -w -intstyle ise -ol std -mt 2 Control_map.ncd Control.ncd Control.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Control.twx Control.ncd -o Control.twr Control.pcf -ucf pinout.ucf 
+bitgen -intstyle ise -f Control.ut Control.ncd 
+xst -intstyle ise -ifn "E:/Hnefatafl/EC551_Project/Control.xst" -ofn "E:/Hnefatafl/EC551_Project/Control.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pinout.ucf -p xc6slx16-csg324-3 Control.ngc Control.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol std -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt 2 -ir off -pr off -lc off -power off -o Control_map.ncd Control.ngd Control.pcf 
+par -w -intstyle ise -ol std -mt 2 Control_map.ncd Control.ncd Control.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Control.twx Control.ncd -o Control.twr Control.pcf -ucf pinout.ucf 
+bitgen -intstyle ise -f Control.ut Control.ncd 
+xst -intstyle ise -ifn "X:/Desktop/Hnefatafl/EC551_Project/Control.xst" -ofn "X:/Desktop/Hnefatafl/EC551_Project/Control.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pinout.ucf -p xc6slx16-csg324-3 Control.ngc Control.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol std -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt 2 -ir off -pr off -lc off -power off -o Control_map.ncd Control.ngd Control.pcf 
+par -w -intstyle ise -ol std -mt 2 Control_map.ncd Control.ncd Control.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Control.twx Control.ncd -o Control.twr Control.pcf -ucf pinout.ucf 
+bitgen -intstyle ise -f Control.ut Control.ncd 
+xst -intstyle ise -ifn "X:/Desktop/Hnefatafl/EC551_Project/Control.xst" -ofn "X:/Desktop/Hnefatafl/EC551_Project/Control.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pinout.ucf -p xc6slx16-csg324-3 Control.ngc Control.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol std -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt 2 -ir off -pr off -lc off -power off -o Control_map.ncd Control.ngd Control.pcf 
+par -w -intstyle ise -ol std -mt 2 Control_map.ncd Control.ncd Control.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Control.twx Control.ncd -o Control.twr Control.pcf -ucf pinout.ucf 
+bitgen -intstyle ise -f Control.ut Control.ncd 
+xst -intstyle ise -ifn "X:/Desktop/Hnefatafl/EC551_Project/Control.xst" -ofn "X:/Desktop/Hnefatafl/EC551_Project/Control.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pinout.ucf -p xc6slx16-csg324-3 Control.ngc Control.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol std -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt 2 -ir off -pr off -lc off -power off -o Control_map.ncd Control.ngd Control.pcf 
+par -w -intstyle ise -ol std -mt 2 Control_map.ncd Control.ncd Control.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Control.twx Control.ncd -o Control.twr Control.pcf -ucf pinout.ucf 
+bitgen -intstyle ise -f Control.ut Control.ncd 
+xst -intstyle ise -ifn "X:/Desktop/Hnefatafl/EC551_Project/Control.xst" -ofn "X:/Desktop/Hnefatafl/EC551_Project/Control.syr" 
+xst -intstyle ise -ifn "X:/Desktop/Hnefatafl/EC551_Project/Control.xst" -ofn "X:/Desktop/Hnefatafl/EC551_Project/Control.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pinout.ucf -p xc6slx16-csg324-3 Control.ngc Control.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol std -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt 2 -ir off -pr off -lc off -power off -o Control_map.ncd Control.ngd Control.pcf 
+par -w -intstyle ise -ol std -mt 2 Control_map.ncd Control.ncd Control.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Control.twx Control.ncd -o Control.twr Control.pcf -ucf pinout.ucf 
+bitgen -intstyle ise -f Control.ut Control.ncd 
+xst -intstyle ise -ifn "X:/Desktop/Hnefatafl/EC551_Project/Control.xst" -ofn "X:/Desktop/Hnefatafl/EC551_Project/Control.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc pinout.ucf -p xc6slx16-csg324-3 Control.ngc Control.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol std -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt 2 -ir off -pr off -lc off -power off -o Control_map.ncd Control.ngd Control.pcf 
+par -w -intstyle ise -ol std -mt 2 Control_map.ncd Control.ncd Control.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Control.twx Control.ncd -o Control.twr Control.pcf -ucf pinout.ucf 
+bitgen -intstyle ise -f Control.ut Control.ncd 
+xst -intstyle ise -ifn "X:/Desktop/Hnefatafl/EC551_Project/Control.xst" -ofn "X:/Desktop/Hnefatafl/EC551_Project/Control.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc pinout.ucf -p xc6slx16-csg324-3 Control.ngc Control.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol std -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt 2 -ir off -pr off -lc off -power off -o Control_map.ncd Control.ngd Control.pcf 
+par -w -intstyle ise -ol std -mt 2 Control_map.ncd Control.ncd Control.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Control.twx Control.ncd -o Control.twr Control.pcf -ucf pinout.ucf 
+bitgen -intstyle ise -f Control.ut Control.ncd 
+xst -intstyle ise -ifn "X:/Desktop/Hnefatafl/EC551_Project/Control.xst" -ofn "X:/Desktop/Hnefatafl/EC551_Project/Control.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc pinout.ucf -p xc6slx16-csg324-3 Control.ngc Control.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol std -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt 2 -ir off -pr off -lc off -power off -o Control_map.ncd Control.ngd Control.pcf 
+par -w -intstyle ise -ol std -mt 2 Control_map.ncd Control.ncd Control.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Control.twx Control.ncd -o Control.twr Control.pcf -ucf pinout.ucf 
+bitgen -intstyle ise -f Control.ut Control.ncd 
+xst -intstyle ise -ifn "X:/Desktop/Hnefatafl/EC551_Project/Control.xst" -ofn "X:/Desktop/Hnefatafl/EC551_Project/Control.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc pinout.ucf -p xc6slx16-csg324-3 Control.ngc Control.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol std -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt 2 -ir off -pr off -lc off -power off -o Control_map.ncd Control.ngd Control.pcf 
+xst -intstyle ise -ifn "X:/Desktop/Hnefatafl/EC551_Project/Control.xst" -ofn "X:/Desktop/Hnefatafl/EC551_Project/Control.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc pinout.ucf -p xc6slx16-csg324-3 Control.ngc Control.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol std -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt 2 -ir off -pr off -lc off -power off -o Control_map.ncd Control.ngd Control.pcf 
+par -w -intstyle ise -ol std -mt 2 Control_map.ncd Control.ncd Control.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Control.twx Control.ncd -o Control.twr Control.pcf -ucf pinout.ucf 
+bitgen -intstyle ise -f Control.ut Control.ncd 
+xst -intstyle ise -ifn "X:/Desktop/Hnefatafl/EC551_Project/Control.xst" -ofn "X:/Desktop/Hnefatafl/EC551_Project/Control.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc pinout.ucf -p xc6slx16-csg324-3 Control.ngc Control.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol std -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt 2 -ir off -pr off -lc off -power off -o Control_map.ncd Control.ngd Control.pcf 
+par -w -intstyle ise -ol std -mt 2 Control_map.ncd Control.ncd Control.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Control.twx Control.ncd -o Control.twr Control.pcf -ucf pinout.ucf 
+bitgen -intstyle ise -f Control.ut Control.ncd 
+xst -intstyle ise -ifn "X:/Desktop/Hnefatafl/EC551_Project/Control.xst" -ofn "X:/Desktop/Hnefatafl/EC551_Project/Control.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc pinout.ucf -p xc6slx16-csg324-3 Control.ngc Control.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol std -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt 2 -ir off -pr off -lc off -power off -o Control_map.ncd Control.ngd Control.pcf 
+par -w -intstyle ise -ol std -mt 2 Control_map.ncd Control.ncd Control.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Control.twx Control.ncd -o Control.twr Control.pcf -ucf pinout.ucf 
+bitgen -intstyle ise -f Control.ut Control.ncd 
+xst -intstyle ise -ifn "X:/Desktop/Hnefatafl/EC551_Project/Control.xst" -ofn "X:/Desktop/Hnefatafl/EC551_Project/Control.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc pinout.ucf -p xc6slx16-csg324-3 Control.ngc Control.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol std -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt 2 -ir off -pr off -lc off -power off -o Control_map.ncd Control.ngd Control.pcf 
+par -w -intstyle ise -ol std -mt 2 Control_map.ncd Control.ncd Control.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Control.twx Control.ncd -o Control.twr Control.pcf -ucf pinout.ucf 
+bitgen -intstyle ise -f Control.ut Control.ncd 
+xst -intstyle ise -ifn "X:/Desktop/Hnefatafl/EC551_Project/Control.xst" -ofn "X:/Desktop/Hnefatafl/EC551_Project/Control.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc pinout.ucf -p xc6slx16-csg324-3 Control.ngc Control.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol std -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt 2 -ir off -pr off -lc off -power off -o Control_map.ncd Control.ngd Control.pcf 
+par -w -intstyle ise -ol std -mt 2 Control_map.ncd Control.ncd Control.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Control.twx Control.ncd -o Control.twr Control.pcf -ucf pinout.ucf 
+bitgen -intstyle ise -f Control.ut Control.ncd 
+xst -intstyle ise -ifn "X:/Desktop/Hnefatafl/EC551_Project/Control.xst" -ofn "X:/Desktop/Hnefatafl/EC551_Project/Control.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc pinout.ucf -p xc6slx16-csg324-3 Control.ngc Control.ngd  
+xst -intstyle ise -ifn "X:/Desktop/Hnefatafl/EC551_Project/Control.xst" -ofn "X:/Desktop/Hnefatafl/EC551_Project/Control.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc pinout.ucf -p xc6slx16-csg324-3 Control.ngc Control.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol std -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt 2 -ir off -pr off -lc off -power off -o Control_map.ncd Control.ngd Control.pcf 
+par -w -intstyle ise -ol std -mt 2 Control_map.ncd Control.ncd Control.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Control.twx Control.ncd -o Control.twr Control.pcf -ucf pinout.ucf 
+bitgen -intstyle ise -f Control.ut Control.ncd 
+xst -intstyle ise -ifn "X:/Desktop/Hnefatafl/EC551_Project/Control.xst" -ofn "X:/Desktop/Hnefatafl/EC551_Project/Control.syr" 
+xst -intstyle ise -ifn "X:/Desktop/Hnefatafl/EC551_Project/Control.xst" -ofn "X:/Desktop/Hnefatafl/EC551_Project/Control.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc pinout.ucf -p xc6slx16-csg324-3 Control.ngc Control.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol std -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt 2 -ir off -pr off -lc off -power off -o Control_map.ncd Control.ngd Control.pcf 
+par -w -intstyle ise -ol std -mt 2 Control_map.ncd Control.ncd Control.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Control.twx Control.ncd -o Control.twr Control.pcf -ucf pinout.ucf 
+bitgen -intstyle ise -f Control.ut Control.ncd 
+xst -intstyle ise -ifn "X:/Desktop/Hnefatafl/EC551_Project/Control.xst" -ofn "X:/Desktop/Hnefatafl/EC551_Project/Control.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc pinout.ucf -p xc6slx16-csg324-3 Control.ngc Control.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol std -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt 2 -ir off -pr off -lc off -power off -o Control_map.ncd Control.ngd Control.pcf 
+par -w -intstyle ise -ol std -mt 2 Control_map.ncd Control.ncd Control.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Control.twx Control.ncd -o Control.twr Control.pcf -ucf pinout.ucf 
+bitgen -intstyle ise -f Control.ut Control.ncd 
+xst -intstyle ise -ifn "X:/Desktop/Hnefatafl/EC551_Project/Control.xst" -ofn "X:/Desktop/Hnefatafl/EC551_Project/Control.syr" 
+xst -intstyle ise -ifn "X:/Desktop/Hnefatafl/EC551_Project/Control.xst" -ofn "X:/Desktop/Hnefatafl/EC551_Project/Control.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc pinout.ucf -p xc6slx16-csg324-3 Control.ngc Control.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol std -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt 2 -ir off -pr off -lc off -power off -o Control_map.ncd Control.ngd Control.pcf 
+par -w -intstyle ise -ol std -mt 2 Control_map.ncd Control.ncd Control.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Control.twx Control.ncd -o Control.twr Control.pcf -ucf pinout.ucf 
+bitgen -intstyle ise -f Control.ut Control.ncd 
+xst -intstyle ise -ifn "X:/Desktop/Hnefatafl/EC551_Project/Control.xst" -ofn "X:/Desktop/Hnefatafl/EC551_Project/Control.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc pinout.ucf -p xc6slx16-csg324-3 Control.ngc Control.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol std -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt 2 -ir off -pr off -lc off -power off -o Control_map.ncd Control.ngd Control.pcf 
+par -w -intstyle ise -ol std -mt 2 Control_map.ncd Control.ncd Control.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Control.twx Control.ncd -o Control.twr Control.pcf -ucf pinout.ucf 
+bitgen -intstyle ise -f Control.ut Control.ncd 
+xst -intstyle ise -ifn "X:/Desktop/Hnefatafl/EC551_Project/Control.xst" -ofn "X:/Desktop/Hnefatafl/EC551_Project/Control.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc pinout.ucf -p xc6slx16-csg324-3 Control.ngc Control.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol std -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt 2 -ir off -pr off -lc off -power off -o Control_map.ncd Control.ngd Control.pcf 
+par -w -intstyle ise -ol std -mt 2 Control_map.ncd Control.ncd Control.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Control.twx Control.ncd -o Control.twr Control.pcf -ucf pinout.ucf 
+bitgen -intstyle ise -f Control.ut Control.ncd 
+xst -intstyle ise -ifn "X:/Desktop/Hnefatafl/EC551_Project/Control.xst" -ofn "X:/Desktop/Hnefatafl/EC551_Project/Control.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc pinout.ucf -p xc6slx16-csg324-3 Control.ngc Control.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol std -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt 2 -ir off -pr off -lc off -power off -o Control_map.ncd Control.ngd Control.pcf 
+par -w -intstyle ise -ol std -mt 2 Control_map.ncd Control.ncd Control.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Control.twx Control.ncd -o Control.twr Control.pcf -ucf pinout.ucf 
+bitgen -intstyle ise -f Control.ut Control.ncd 
+xst -intstyle ise -ifn "X:/Desktop/Hnefatafl/EC551_Project/Control.xst" -ofn "X:/Desktop/Hnefatafl/EC551_Project/Control.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc pinout.ucf -p xc6slx16-csg324-3 Control.ngc Control.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol std -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt 2 -ir off -pr off -lc off -power off -o Control_map.ncd Control.ngd Control.pcf 
+par -w -intstyle ise -ol std -mt 2 Control_map.ncd Control.ncd Control.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Control.twx Control.ncd -o Control.twr Control.pcf -ucf pinout.ucf 
+bitgen -intstyle ise -f Control.ut Control.ncd 
+xst -intstyle ise -ifn "X:/Desktop/Hnefatafl/EC551_Project/Control.xst" -ofn "X:/Desktop/Hnefatafl/EC551_Project/Control.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc pinout.ucf -p xc6slx16-csg324-3 Control.ngc Control.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol std -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt 2 -ir off -pr off -lc off -power off -o Control_map.ncd Control.ngd Control.pcf 
+par -w -intstyle ise -ol std -mt 2 Control_map.ncd Control.ncd Control.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Control.twx Control.ncd -o Control.twr Control.pcf -ucf pinout.ucf 
+bitgen -intstyle ise -f Control.ut Control.ncd 
+xst -intstyle ise -ifn "X:/Desktop/Hnefatafl/EC551_Project/Control.xst" -ofn "X:/Desktop/Hnefatafl/EC551_Project/Control.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc pinout.ucf -p xc6slx16-csg324-3 Control.ngc Control.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol std -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt 2 -ir off -pr off -lc off -power off -o Control_map.ncd Control.ngd Control.pcf 
+par -w -intstyle ise -ol std -mt 2 Control_map.ncd Control.ncd Control.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Control.twx Control.ncd -o Control.twr Control.pcf -ucf pinout.ucf 
+bitgen -intstyle ise -f Control.ut Control.ncd 
+xst -intstyle ise -ifn "X:/Desktop/Hnefatafl/EC551_Project/Control.xst" -ofn "X:/Desktop/Hnefatafl/EC551_Project/Control.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc pinout.ucf -p xc6slx16-csg324-3 Control.ngc Control.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol std -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt 2 -ir off -pr off -lc off -power off -o Control_map.ncd Control.ngd Control.pcf 
+par -w -intstyle ise -ol std -mt 2 Control_map.ncd Control.ncd Control.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Control.twx Control.ncd -o Control.twr Control.pcf -ucf pinout.ucf 
+bitgen -intstyle ise -f Control.ut Control.ncd 
+xst -intstyle ise -ifn "X:/Desktop/Hnefatafl/EC551_Project/Control.xst" -ofn "X:/Desktop/Hnefatafl/EC551_Project/Control.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc pinout.ucf -p xc6slx16-csg324-3 Control.ngc Control.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol std -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt 2 -ir off -pr off -lc off -power off -o Control_map.ncd Control.ngd Control.pcf 
+par -w -intstyle ise -ol std -mt 2 Control_map.ncd Control.ncd Control.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Control.twx Control.ncd -o Control.twr Control.pcf -ucf pinout.ucf 
+bitgen -intstyle ise -f Control.ut Control.ncd 
+xst -intstyle ise -ifn "X:/Desktop/Hnefatafl/EC551_Project/Control.xst" -ofn "X:/Desktop/Hnefatafl/EC551_Project/Control.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc pinout.ucf -p xc6slx16-csg324-3 Control.ngc Control.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol std -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt 2 -ir off -pr off -lc off -power off -o Control_map.ncd Control.ngd Control.pcf 
+par -w -intstyle ise -ol std -mt 2 Control_map.ncd Control.ncd Control.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Control.twx Control.ncd -o Control.twr Control.pcf -ucf pinout.ucf 
+bitgen -intstyle ise -f Control.ut Control.ncd 
+xst -intstyle ise -ifn "X:/Desktop/Hnefatafl/EC551_Project/Control.xst" -ofn "X:/Desktop/Hnefatafl/EC551_Project/Control.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc pinout.ucf -p xc6slx16-csg324-3 Control.ngc Control.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol std -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt 2 -ir off -pr off -lc off -power off -o Control_map.ncd Control.ngd Control.pcf 
+par -w -intstyle ise -ol std -mt 2 Control_map.ncd Control.ncd Control.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Control.twx Control.ncd -o Control.twr Control.pcf -ucf pinout.ucf 
+bitgen -intstyle ise -f Control.ut Control.ncd 
+xst -intstyle ise -ifn "X:/Desktop/Hnefatafl/EC551_Project/Control.xst" -ofn "X:/Desktop/Hnefatafl/EC551_Project/Control.syr" 
+xst -intstyle ise -ifn "X:/Desktop/Hnefatafl/EC551_Project/Control.xst" -ofn "X:/Desktop/Hnefatafl/EC551_Project/Control.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc pinout.ucf -p xc6slx16-csg324-3 Control.ngc Control.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol std -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt 2 -ir off -pr off -lc off -power off -o Control_map.ncd Control.ngd Control.pcf 
+par -w -intstyle ise -ol std -mt 2 Control_map.ncd Control.ncd Control.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Control.twx Control.ncd -o Control.twr Control.pcf -ucf pinout.ucf 
+bitgen -intstyle ise -f Control.ut Control.ncd 
+xst -intstyle ise -ifn "X:/Desktop/Hnefatafl/EC551_Project/Control.xst" -ofn "X:/Desktop/Hnefatafl/EC551_Project/Control.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc pinout.ucf -p xc6slx16-csg324-3 Control.ngc Control.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol std -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt 2 -ir off -pr off -lc off -power off -o Control_map.ncd Control.ngd Control.pcf 
+par -w -intstyle ise -ol std -mt 2 Control_map.ncd Control.ncd Control.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Control.twx Control.ncd -o Control.twr Control.pcf -ucf pinout.ucf 
+bitgen -intstyle ise -f Control.ut Control.ncd 
+xst -intstyle ise -ifn "X:/Desktop/Hnefatafl/EC551_Project/Control.xst" -ofn "X:/Desktop/Hnefatafl/EC551_Project/Control.syr" 
+xst -intstyle ise -ifn "X:/Desktop/Hnefatafl/EC551_Project/Control.xst" -ofn "X:/Desktop/Hnefatafl/EC551_Project/Control.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc pinout.ucf -p xc6slx16-csg324-3 Control.ngc Control.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol std -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt 2 -ir off -pr off -lc off -power off -o Control_map.ncd Control.ngd Control.pcf 
+par -w -intstyle ise -ol std -mt 2 Control_map.ncd Control.ncd Control.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Control.twx Control.ncd -o Control.twr Control.pcf -ucf pinout.ucf 
+bitgen -intstyle ise -f Control.ut Control.ncd 
+xst -intstyle ise -ifn "X:/Desktop/Hnefatafl/EC551_Project/Control.xst" -ofn "X:/Desktop/Hnefatafl/EC551_Project/Control.syr" 
+xst -intstyle ise -ifn "X:/Desktop/Hnefatafl/EC551_Project/Control.xst" -ofn "X:/Desktop/Hnefatafl/EC551_Project/Control.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc pinout.ucf -p xc6slx16-csg324-3 Control.ngc Control.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol std -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt 2 -ir off -pr off -lc off -power off -o Control_map.ncd Control.ngd Control.pcf 
+par -w -intstyle ise -ol std -mt 2 Control_map.ncd Control.ncd Control.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Control.twx Control.ncd -o Control.twr Control.pcf -ucf pinout.ucf 
+bitgen -intstyle ise -f Control.ut Control.ncd 
+xst -intstyle ise -ifn "X:/Desktop/Hnefatafl/EC551_Project/Control.xst" -ofn "X:/Desktop/Hnefatafl/EC551_Project/Control.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc pinout.ucf -p xc6slx16-csg324-3 Control.ngc Control.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol std -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt 2 -ir off -pr off -lc off -power off -o Control_map.ncd Control.ngd Control.pcf 
+par -w -intstyle ise -ol std -mt 2 Control_map.ncd Control.ncd Control.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Control.twx Control.ncd -o Control.twr Control.pcf -ucf pinout.ucf 
+bitgen -intstyle ise -f Control.ut Control.ncd 
+xst -intstyle ise -ifn "X:/Desktop/Hnefatafl/EC551_Project/Control.xst" -ofn "X:/Desktop/Hnefatafl/EC551_Project/Control.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc pinout.ucf -p xc6slx16-csg324-3 Control.ngc Control.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol std -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt 2 -ir off -pr off -lc off -power off -o Control_map.ncd Control.ngd Control.pcf 
+par -w -intstyle ise -ol std -mt 2 Control_map.ncd Control.ncd Control.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Control.twx Control.ncd -o Control.twr Control.pcf -ucf pinout.ucf 
+bitgen -intstyle ise -f Control.ut Control.ncd 
+xst -intstyle ise -ifn "X:/Desktop/Hnefatafl/EC551_Project/Control.xst" -ofn "X:/Desktop/Hnefatafl/EC551_Project/Control.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc pinout.ucf -p xc6slx16-csg324-3 Control.ngc Control.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol std -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt 2 -ir off -pr off -lc off -power off -o Control_map.ncd Control.ngd Control.pcf 
+par -w -intstyle ise -ol std -mt 2 Control_map.ncd Control.ncd Control.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Control.twx Control.ncd -o Control.twr Control.pcf -ucf pinout.ucf 
+bitgen -intstyle ise -f Control.ut Control.ncd 
+xst -intstyle ise -ifn "X:/Desktop/Hnefatafl/EC551_Project/Control.xst" -ofn "X:/Desktop/Hnefatafl/EC551_Project/Control.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc pinout.ucf -p xc6slx16-csg324-3 Control.ngc Control.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol std -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt 2 -ir off -pr off -lc off -power off -o Control_map.ncd Control.ngd Control.pcf 
+par -w -intstyle ise -ol std -mt 2 Control_map.ncd Control.ncd Control.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Control.twx Control.ncd -o Control.twr Control.pcf -ucf pinout.ucf 
+bitgen -intstyle ise -f Control.ut Control.ncd 
+xst -intstyle ise -ifn "X:/Desktop/Hnefatafl/EC551_Project/Control.xst" -ofn "X:/Desktop/Hnefatafl/EC551_Project/Control.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc pinout.ucf -p xc6slx16-csg324-3 Control.ngc Control.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol std -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt 2 -ir off -pr off -lc off -power off -o Control_map.ncd Control.ngd Control.pcf 
+par -w -intstyle ise -ol std -mt 2 Control_map.ncd Control.ncd Control.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Control.twx Control.ncd -o Control.twr Control.pcf -ucf pinout.ucf 
+bitgen -intstyle ise -f Control.ut Control.ncd 
+xst -intstyle ise -ifn "X:/Desktop/Hnefatafl/EC551_Project/Control.xst" -ofn "X:/Desktop/Hnefatafl/EC551_Project/Control.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc pinout.ucf -p xc6slx16-csg324-3 Control.ngc Control.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol std -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt 2 -ir off -pr off -lc off -power off -o Control_map.ncd Control.ngd Control.pcf 
+par -w -intstyle ise -ol std -mt 2 Control_map.ncd Control.ncd Control.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Control.twx Control.ncd -o Control.twr Control.pcf -ucf pinout.ucf 
+bitgen -intstyle ise -f Control.ut Control.ncd 
+xst -intstyle ise -ifn "X:/Desktop/Hnefatafl/EC551_Project/Control.xst" -ofn "X:/Desktop/Hnefatafl/EC551_Project/Control.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc pinout.ucf -p xc6slx16-csg324-3 Control.ngc Control.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol std -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt 2 -ir off -pr off -lc off -power off -o Control_map.ncd Control.ngd Control.pcf 
+par -w -intstyle ise -ol std -mt 2 Control_map.ncd Control.ncd Control.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Control.twx Control.ncd -o Control.twr Control.pcf -ucf pinout.ucf 
+bitgen -intstyle ise -f Control.ut Control.ncd 
+xst -intstyle ise -ifn "X:/Desktop/Hnefatafl/EC551_Project/Control.xst" -ofn "X:/Desktop/Hnefatafl/EC551_Project/Control.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc pinout.ucf -p xc6slx16-csg324-3 Control.ngc Control.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol std -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt 2 -ir off -pr off -lc off -power off -o Control_map.ncd Control.ngd Control.pcf 
+par -w -intstyle ise -ol std -mt 2 Control_map.ncd Control.ncd Control.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Control.twx Control.ncd -o Control.twr Control.pcf -ucf pinout.ucf 
+bitgen -intstyle ise -f Control.ut Control.ncd 
+xst -intstyle ise -ifn "X:/Desktop/Hnefatafl/EC551_Project/Control.xst" -ofn "X:/Desktop/Hnefatafl/EC551_Project/Control.syr" 
+xst -intstyle ise -ifn "X:/Desktop/Hnefatafl/EC551_Project/Control.xst" -ofn "X:/Desktop/Hnefatafl/EC551_Project/Control.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc pinout.ucf -p xc6slx16-csg324-3 Control.ngc Control.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol std -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt 2 -ir off -pr off -lc off -power off -o Control_map.ncd Control.ngd Control.pcf 
+par -w -intstyle ise -ol std -mt 2 Control_map.ncd Control.ncd Control.pcf 
+bitgen -intstyle ise -f Control.ut Control.ncd 
+xst -intstyle ise -ifn "X:/Desktop/Hnefatafl/EC551_Project/Control.xst" -ofn "X:/Desktop/Hnefatafl/EC551_Project/Control.syr" 
+xst -intstyle ise -ifn "X:/Desktop/Hnefatafl/EC551_Project/Control.xst" -ofn "X:/Desktop/Hnefatafl/EC551_Project/Control.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc pinout.ucf -p xc6slx16-csg324-3 Control.ngc Control.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol std -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt 2 -ir off -pr off -lc off -power off -o Control_map.ncd Control.ngd Control.pcf 
+par -w -intstyle ise -ol std -mt 2 Control_map.ncd Control.ncd Control.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Control.twx Control.ncd -o Control.twr Control.pcf -ucf pinout.ucf 
+bitgen -intstyle ise -f Control.ut Control.ncd 
+xst -intstyle ise -ifn "X:/Desktop/Hnefatafl/EC551_Project/Control.xst" -ofn "X:/Desktop/Hnefatafl/EC551_Project/Control.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc pinout.ucf -p xc6slx16-csg324-3 Control.ngc Control.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol std -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt 2 -ir off -pr off -lc off -power off -o Control_map.ncd Control.ngd Control.pcf 
+par -w -intstyle ise -ol std -mt 2 Control_map.ncd Control.ncd Control.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Control.twx Control.ncd -o Control.twr Control.pcf -ucf pinout.ucf 
+bitgen -intstyle ise -f Control.ut Control.ncd 
+xst -intstyle ise -ifn "X:/Desktop/Hnefatafl/EC551_Project/Control.xst" -ofn "X:/Desktop/Hnefatafl/EC551_Project/Control.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc pinout.ucf -p xc6slx16-csg324-3 Control.ngc Control.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol std -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt 2 -ir off -pr off -lc off -power off -o Control_map.ncd Control.ngd Control.pcf 
+par -w -intstyle ise -ol std -mt 2 Control_map.ncd Control.ncd Control.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Control.twx Control.ncd -o Control.twr Control.pcf -ucf pinout.ucf 
+bitgen -intstyle ise -f Control.ut Control.ncd 
+xst -intstyle ise -ifn "X:/Desktop/Hnefatafl/EC551_Project/Control.xst" -ofn "X:/Desktop/Hnefatafl/EC551_Project/Control.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc pinout.ucf -p xc6slx16-csg324-3 Control.ngc Control.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol std -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt 2 -ir off -pr off -lc off -power off -o Control_map.ncd Control.ngd Control.pcf 
+par -w -intstyle ise -ol std -mt 2 Control_map.ncd Control.ncd Control.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Control.twx Control.ncd -o Control.twr Control.pcf -ucf pinout.ucf 
+bitgen -intstyle ise -f Control.ut Control.ncd 
+xst -intstyle ise -ifn "X:/Desktop/Hnefatafl/EC551_Project/Control.xst" -ofn "X:/Desktop/Hnefatafl/EC551_Project/Control.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc pinout.ucf -p xc6slx16-csg324-3 Control.ngc Control.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol std -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt 2 -ir off -pr off -lc off -power off -o Control_map.ncd Control.ngd Control.pcf 
+par -w -intstyle ise -ol std -mt 2 Control_map.ncd Control.ncd Control.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Control.twx Control.ncd -o Control.twr Control.pcf -ucf pinout.ucf 
+bitgen -intstyle ise -f Control.ut Control.ncd 
+xst -intstyle ise -ifn "X:/Desktop/Hnefatafl/EC551_Project/Control.xst" -ofn "X:/Desktop/Hnefatafl/EC551_Project/Control.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc pinout.ucf -p xc6slx16-csg324-3 Control.ngc Control.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol std -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt 2 -ir off -pr off -lc off -power off -o Control_map.ncd Control.ngd Control.pcf 
+par -w -intstyle ise -ol std -mt 2 Control_map.ncd Control.ncd Control.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Control.twx Control.ncd -o Control.twr Control.pcf -ucf pinout.ucf 
+bitgen -intstyle ise -f Control.ut Control.ncd 
+xst -intstyle ise -ifn "X:/Desktop/Hnefatafl/EC551_Project/Control.xst" -ofn "X:/Desktop/Hnefatafl/EC551_Project/Control.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc pinout.ucf -p xc6slx16-csg324-3 Control.ngc Control.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol std -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt 2 -ir off -pr off -lc off -power off -o Control_map.ncd Control.ngd Control.pcf 
+par -w -intstyle ise -ol std -mt 2 Control_map.ncd Control.ncd Control.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Control.twx Control.ncd -o Control.twr Control.pcf -ucf pinout.ucf 
+bitgen -intstyle ise -f Control.ut Control.ncd 
+xst -intstyle ise -ifn "X:/Desktop/Hnefatafl/EC551_Project/Control.xst" -ofn "X:/Desktop/Hnefatafl/EC551_Project/Control.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc pinout.ucf -p xc6slx16-csg324-3 Control.ngc Control.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol std -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt 2 -ir off -pr off -lc off -power off -o Control_map.ncd Control.ngd Control.pcf 
+par -w -intstyle ise -ol std -mt 2 Control_map.ncd Control.ncd Control.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Control.twx Control.ncd -o Control.twr Control.pcf -ucf pinout.ucf 
+bitgen -intstyle ise -f Control.ut Control.ncd 
+xst -intstyle ise -ifn "X:/Desktop/Hnefatafl/EC551_Project/Control.xst" -ofn "X:/Desktop/Hnefatafl/EC551_Project/Control.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc pinout.ucf -p xc6slx16-csg324-3 Control.ngc Control.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol std -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt 2 -ir off -pr off -lc off -power off -o Control_map.ncd Control.ngd Control.pcf 
+par -w -intstyle ise -ol std -mt 2 Control_map.ncd Control.ncd Control.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Control.twx Control.ncd -o Control.twr Control.pcf -ucf pinout.ucf 
+bitgen -intstyle ise -f Control.ut Control.ncd 
+xst -intstyle ise -ifn "X:/Desktop/Hnefatafl/EC551_Project/Control.xst" -ofn "X:/Desktop/Hnefatafl/EC551_Project/Control.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc pinout.ucf -p xc6slx16-csg324-3 Control.ngc Control.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol std -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt 2 -ir off -pr off -lc off -power off -o Control_map.ncd Control.ngd Control.pcf 
+par -w -intstyle ise -ol std -mt 2 Control_map.ncd Control.ncd Control.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Control.twx Control.ncd -o Control.twr Control.pcf -ucf pinout.ucf 
+bitgen -intstyle ise -f Control.ut Control.ncd 
+xst -intstyle ise -ifn "X:/Desktop/Hnefatafl/EC551_Project/Control.xst" -ofn "X:/Desktop/Hnefatafl/EC551_Project/Control.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc pinout.ucf -p xc6slx16-csg324-3 Control.ngc Control.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol std -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt 2 -ir off -pr off -lc off -power off -o Control_map.ncd Control.ngd Control.pcf 
+par -w -intstyle ise -ol std -mt 2 Control_map.ncd Control.ncd Control.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Control.twx Control.ncd -o Control.twr Control.pcf -ucf pinout.ucf 
+bitgen -intstyle ise -f Control.ut Control.ncd 
+xst -intstyle ise -ifn "X:/Desktop/Hnefatafl/EC551_Project/Control.xst" -ofn "X:/Desktop/Hnefatafl/EC551_Project/Control.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc pinout.ucf -p xc6slx16-csg324-3 Control.ngc Control.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol std -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt 2 -ir off -pr off -lc off -power off -o Control_map.ncd Control.ngd Control.pcf 
+par -w -intstyle ise -ol std -mt 2 Control_map.ncd Control.ncd Control.pcf 
+bitgen -intstyle ise -f Control.ut Control.ncd 
+xst -intstyle ise -ifn "X:/Desktop/Hnefatafl/EC551_Project/Control.xst" -ofn "X:/Desktop/Hnefatafl/EC551_Project/Control.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc pinout.ucf -p xc6slx16-csg324-3 Control.ngc Control.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol std -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt 2 -ir off -pr off -lc off -power off -o Control_map.ncd Control.ngd Control.pcf 
+par -w -intstyle ise -ol std -mt 2 Control_map.ncd Control.ncd Control.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Control.twx Control.ncd -o Control.twr Control.pcf -ucf pinout.ucf 
+bitgen -intstyle ise -f Control.ut Control.ncd 
+xst -intstyle ise -ifn "X:/Desktop/Hnefatafl/EC551_Project/Control.xst" -ofn "X:/Desktop/Hnefatafl/EC551_Project/Control.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc pinout.ucf -p xc6slx16-csg324-3 Control.ngc Control.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol std -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt 2 -ir off -pr off -lc off -power off -o Control_map.ncd Control.ngd Control.pcf 
+par -w -intstyle ise -ol std -mt 2 Control_map.ncd Control.ncd Control.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Control.twx Control.ncd -o Control.twr Control.pcf -ucf pinout.ucf 
+bitgen -intstyle ise -f Control.ut Control.ncd 
+xst -intstyle ise -ifn "X:/Desktop/Hnefatafl/EC551_Project/Control.xst" -ofn "X:/Desktop/Hnefatafl/EC551_Project/Control.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc pinout.ucf -p xc6slx16-csg324-3 Control.ngc Control.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol std -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt 2 -ir off -pr off -lc off -power off -o Control_map.ncd Control.ngd Control.pcf 
+par -w -intstyle ise -ol std -mt 2 Control_map.ncd Control.ncd Control.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Control.twx Control.ncd -o Control.twr Control.pcf -ucf pinout.ucf 
+bitgen -intstyle ise -f Control.ut Control.ncd 
+xst -intstyle ise -ifn "X:/Desktop/Hnefatafl/EC551_Project/Control.xst" -ofn "X:/Desktop/Hnefatafl/EC551_Project/Control.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc pinout.ucf -p xc6slx16-csg324-3 Control.ngc Control.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol std -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt 2 -ir off -pr off -lc off -power off -o Control_map.ncd Control.ngd Control.pcf 
+par -w -intstyle ise -ol std -mt 2 Control_map.ncd Control.ncd Control.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Control.twx Control.ncd -o Control.twr Control.pcf -ucf pinout.ucf 
+bitgen -intstyle ise -f Control.ut Control.ncd 
+xst -intstyle ise -ifn "X:/Desktop/Hnefatafl/EC551_Project/Control.xst" -ofn "X:/Desktop/Hnefatafl/EC551_Project/Control.syr" 
+xst -intstyle ise -ifn "X:/Desktop/Hnefatafl/EC551_Project/Control.xst" -ofn "X:/Desktop/Hnefatafl/EC551_Project/Control.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc pinout.ucf -p xc6slx16-csg324-3 Control.ngc Control.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol std -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt 2 -ir off -pr off -lc off -power off -o Control_map.ncd Control.ngd Control.pcf 
+par -w -intstyle ise -ol std -mt 2 Control_map.ncd Control.ncd Control.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Control.twx Control.ncd -o Control.twr Control.pcf -ucf pinout.ucf 
+bitgen -intstyle ise -f Control.ut Control.ncd 
+xst -intstyle ise -ifn "X:/Desktop/Hnefatafl/EC551_Project/Control.xst" -ofn "X:/Desktop/Hnefatafl/EC551_Project/Control.syr" 
+xst -intstyle ise -ifn "X:/Desktop/Hnefatafl/EC551_Project/Control.xst" -ofn "X:/Desktop/Hnefatafl/EC551_Project/Control.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc pinout.ucf -p xc6slx16-csg324-3 Control.ngc Control.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol std -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt 2 -ir off -pr off -lc off -power off -o Control_map.ncd Control.ngd Control.pcf 
+par -w -intstyle ise -ol std -mt 2 Control_map.ncd Control.ncd Control.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Control.twx Control.ncd -o Control.twr Control.pcf -ucf pinout.ucf 
+bitgen -intstyle ise -f Control.ut Control.ncd 
+xst -intstyle ise -ifn "X:/Desktop/Hnefatafl/EC551_Project/Control.xst" -ofn "X:/Desktop/Hnefatafl/EC551_Project/Control.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc pinout.ucf -p xc6slx16-csg324-3 Control.ngc Control.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol std -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt 2 -ir off -pr off -lc off -power off -o Control_map.ncd Control.ngd Control.pcf 
+par -w -intstyle ise -ol std -mt 2 Control_map.ncd Control.ncd Control.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Control.twx Control.ncd -o Control.twr Control.pcf -ucf pinout.ucf 
+bitgen -intstyle ise -f Control.ut Control.ncd 
+xst -intstyle ise -ifn "X:/Desktop/Hnefatafl/EC551_Project/Control.xst" -ofn "X:/Desktop/Hnefatafl/EC551_Project/Control.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc pinout.ucf -p xc6slx16-csg324-3 Control.ngc Control.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol std -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt 2 -ir off -pr off -lc off -power off -o Control_map.ncd Control.ngd Control.pcf 
+par -w -intstyle ise -ol std -mt 2 Control_map.ncd Control.ncd Control.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Control.twx Control.ncd -o Control.twr Control.pcf -ucf pinout.ucf 
+bitgen -intstyle ise -f Control.ut Control.ncd 
+xst -intstyle ise -ifn "X:/Desktop/Hnefatafl/EC551_Project/Control.xst" -ofn "X:/Desktop/Hnefatafl/EC551_Project/Control.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc pinout.ucf -p xc6slx16-csg324-3 Control.ngc Control.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol std -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt 2 -ir off -pr off -lc off -power off -o Control_map.ncd Control.ngd Control.pcf 
+par -w -intstyle ise -ol std -mt 2 Control_map.ncd Control.ncd Control.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Control.twx Control.ncd -o Control.twr Control.pcf -ucf pinout.ucf 
+bitgen -intstyle ise -f Control.ut Control.ncd 
+xst -intstyle ise -ifn "X:/Desktop/Hnefatafl/EC551_Project/Control.xst" -ofn "X:/Desktop/Hnefatafl/EC551_Project/Control.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc pinout.ucf -p xc6slx16-csg324-3 Control.ngc Control.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol std -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt 2 -ir off -pr off -lc off -power off -o Control_map.ncd Control.ngd Control.pcf 
+par -w -intstyle ise -ol std -mt 2 Control_map.ncd Control.ncd Control.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Control.twx Control.ncd -o Control.twr Control.pcf -ucf pinout.ucf 
+bitgen -intstyle ise -f Control.ut Control.ncd 
+xst -intstyle ise -ifn "X:/Desktop/Hnefatafl/EC551_Project/Control.xst" -ofn "X:/Desktop/Hnefatafl/EC551_Project/Control.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc pinout.ucf -p xc6slx16-csg324-3 Control.ngc Control.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol std -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt 2 -ir off -pr off -lc off -power off -o Control_map.ncd Control.ngd Control.pcf 
+par -w -intstyle ise -ol std -mt 2 Control_map.ncd Control.ncd Control.pcf 
+xst -intstyle ise -ifn "X:/Desktop/Hnefatafl/EC551_Project/Control.xst" -ofn "X:/Desktop/Hnefatafl/EC551_Project/Control.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc pinout.ucf -p xc6slx16-csg324-3 Control.ngc Control.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol std -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt 2 -ir off -pr off -lc off -power off -o Control_map.ncd Control.ngd Control.pcf 
+par -w -intstyle ise -ol std -mt 2 Control_map.ncd Control.ncd Control.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Control.twx Control.ncd -o Control.twr Control.pcf -ucf pinout.ucf 
+bitgen -intstyle ise -f Control.ut Control.ncd 
+xst -intstyle ise -ifn "X:/Desktop/Hnefatafl/EC551_Project/Control.xst" -ofn "X:/Desktop/Hnefatafl/EC551_Project/Control.syr" 
+xst -intstyle ise -ifn "X:/Desktop/Hnefatafl/EC551_Project/Control.xst" -ofn "X:/Desktop/Hnefatafl/EC551_Project/Control.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc pinout.ucf -p xc6slx16-csg324-3 Control.ngc Control.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol std -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt 2 -ir off -pr off -lc off -power off -o Control_map.ncd Control.ngd Control.pcf 
+par -w -intstyle ise -ol std -mt 2 Control_map.ncd Control.ncd Control.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Control.twx Control.ncd -o Control.twr Control.pcf -ucf pinout.ucf 
+bitgen -intstyle ise -f Control.ut Control.ncd 
+xst -intstyle ise -ifn "X:/Desktop/Hnefatafl/EC551_Project/Control.xst" -ofn "X:/Desktop/Hnefatafl/EC551_Project/Control.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc pinout.ucf -p xc6slx16-csg324-3 Control.ngc Control.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol std -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt 2 -ir off -pr off -lc off -power off -o Control_map.ncd Control.ngd Control.pcf 
+par -w -intstyle ise -ol std -mt 2 Control_map.ncd Control.ncd Control.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Control.twx Control.ncd -o Control.twr Control.pcf -ucf pinout.ucf 
+bitgen -intstyle ise -f Control.ut Control.ncd 
+xst -intstyle ise -ifn "X:/Desktop/Hnefatafl/EC551_Project/Control.xst" -ofn "X:/Desktop/Hnefatafl/EC551_Project/Control.syr" 

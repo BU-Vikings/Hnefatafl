@@ -1,7 +1,7 @@
-Release 14.2 Drc P.28xd (nt)
+Release 14.2 Drc P.28xd (nt64)
 Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 
-Fri Feb 21 17:16:11 2014
+Mon Mar 31 22:35:39 2014
 
 drc -z keyboardtest.ncd keyboardtest.pcf
 

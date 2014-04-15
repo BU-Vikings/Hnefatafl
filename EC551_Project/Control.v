@@ -1,6 +1,6 @@
 `timescale 1ns / 1ps
 
-module Control(output [2:0] R, output [2:0] G, output [1:0] B, output HS, output VS, input rst, input clk, input wire data, input wire keybdclk, output reg [7:0] led);
+module Control(output [2:0] R, output [2:0] G, output [1:0] B, output HS, output VS, input rst, input clk, input wire data, input wire keybdclk, output reg [7:0] led, input i_TX, output TxD);
 
 parameter BOARD_WIDTH = 11;
 parameter BOARD_HEIGHT = 11;
@@ -22,6 +22,8 @@ wire [7:0] spriteByte;
 wire [15:0] address_out;
 wire [13:0] address_demo;
 wire [7:0] demo_out;
+	wire done;
+	wire [7:0] recvd;
 reg tutorial = 1'b1;
 reg [1:0] highlight = 2'b00;
 reg [1:0] new_highlight = 2'b00;
@@ -60,6 +62,9 @@ reg [3:0] next_write_x;
 reg [3:0] next_write_y;
 reg [1:0] vtype;
 reg [1:0] next_vtype;
+reg TX_start;
+reg [7:0] TX_data = 70;
+wire TxD_busy;
 reg safe_flag = 1'b1;
 reg next_safe_flag = 1'b1;
 GameClockDivider gc (.clk_in(clk), .clk_out(gameclk));
@@ -67,16 +72,23 @@ GameBoard gb(.clk(clk), .rst(rst), .throne_empty(throne_empty), .read_x(read_x),
 DemoSprites M1(clk,address_out,spriteByte);
 Demo D(clk,address_demo,demo_out);
 Display (.R(R), .G(G), .B(B), .HS(HS), .VS(VS), .rst(rst), .clk(clk), .read_x(read_x), .read_y(read_y), .readData(readData), .spriteByte(spriteByte), .address_out(address_out), .tutorial(tutorial), .hx(hx), .hy(hy), .highlight(highlight), .mx(mx), .my(my), .address_demo(address_demo), .demo_out(demo_out));
+UART_Rx Rx(recvd, i_TX, clk, rst, done);
+UART_Tx Tx(.clk(clk), .TxD_start(TX_start), .TxD_data(TX_data), .TxD(TxD), .TxD_busy(TxD_busy));
+
+
 
 reg turn = 1'b0; //white 0, black 1
 reg next_turn = 1'b1;
-reg [4:0] state = 4'b0;
-
-reg [4:0] next_state = 4'b0;
+reg [5:0] state = 4'b0;
+reg [7:0] TX_data_next;
+reg TX_start_next = 1'b0;
+reg [5:0] next_state = 4'b0;
 reg sentinel = 1'b0;
 wire flagedge;
 
 PosedgeDetector ped(.clk(clk), .signal(flag), .edgeout(flagedge));
+
+
 
 always @(negedge keybdclk) begin 
 	case(b)
@@ -140,6 +152,8 @@ always @ (posedge clk) begin
 	vy <= next_vy;
 	vtype <= next_vtype;
 	safe_flag <= next_safe_flag;
+	TX_data <= TX_data_next;
+	TX_start <= TX_start_next;
 end
 
 parameter PIECE_WHITE = 2'b10;
@@ -156,7 +170,7 @@ always @ (*) begin
 	new_my = my;
 	new_cx = cx;
 	new_cy = cy;
-	next_led = {hx, cx};
+	next_led = state;
 	new_read_x = read_x2;
 	new_read_y = read_y2;
 	next_offset_x = offset_x;
@@ -172,6 +186,8 @@ always @ (*) begin
 	next_vy = vy;
 	next_vtype = vtype;
 	next_safe_flag = safe_flag;
+	TX_data_next = TX_data;
+	TX_start_next = TX_start;
 	case (state)
 		4'b0000: begin //wait for tutorial to end on enter
 			if (data_pre == 8'b01011010) begin //enter
@@ -306,7 +322,7 @@ always @ (*) begin
 		4'b1001: begin
 			new_highlight = 1'b0;
 			next_write = 1'b0;
-			next_state = 4'b1010;
+			next_state = 5'b11111;//4'b1010; 
 		end
 		4'b1010: begin //begin board clean-up
 			next_vx = 0;
@@ -502,7 +518,66 @@ always @ (*) begin
 			new_hy = 5;
 			next_state = 4'b0001;
 		end
-
+		5'b11111: begin
+			next_state = 6'b100000;
+		end
+		6'b100000: begin //begin board transmission
+			TX_data_next = 8'b11110000;
+			TX_start_next = 1'b1;
+			next_state = 6'b100110;
+		end
+		6'b100110: begin
+			TX_start_next = 1'b0;
+			next_state = 6'b100101;
+		end
+		6'b100101: begin
+			if (TxD_busy) begin
+				next_state = 6'b100101;
+			end else begin
+				next_vx = 0;
+				next_vy = 0;
+				new_read_x = next_vx;
+				new_read_y = next_vy;
+				next_state = 6'b100001;
+			end
+		end
+		6'b100001: begin
+			next_state = 6'b100111;
+			TX_data_next = {6'b001100, readData2};
+			TX_start_next = 1'b1;
+		end
+		6'b100111: begin
+			next_state = 6'b100010;
+			TX_start_next = 1'b0;
+		end
+		6'b100010: begin
+			if (TxD_busy) begin
+				next_state = 6'b100010;
+			end else begin
+				next_state = 6'b100011;
+			end
+		end
+		6'b100011: begin
+			if (vx == 10 && vy == 10) begin
+				next_state = 6'b100100; //change this to exit point
+				TX_start_next = 1'b1;
+				TX_data_next = 10; //newline
+			end else begin
+				if (next_vx <= 9) begin
+					next_vx = vx + 1;
+				end else begin
+					next_vx = 0;
+					next_vy = vy + 1;
+				end
+				new_read_x = next_vx;
+				new_read_y = next_vy;
+				next_state = 6'b100001;
+			end
+		end
+		6'b100100: begin
+			TX_start_next = 1'b0;
+			next_state = 5'b11110;
+		end
 	endcase
 end
 

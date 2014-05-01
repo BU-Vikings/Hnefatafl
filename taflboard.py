@@ -6,22 +6,31 @@ import sys
 # This module defines the board class. A board object contains a 2D array of values
 # defined as 2 layers of lists, as in [[1,2],[3,4]]. The board also tracks turns and
 # can be initialized to any size. If a size isn't defined, the board defaults to
-# 11x11 and fills itself with a propperly set up hnefatafl board. Moves can be requested
-# using the board.aiTakeTurnRandom() method and moves can be input using
-# human.takeTurn(move). The input move should be a list of size four and contain the
-# values [x,y,new_x,new_y] where x and y are the coordinates of the piece to be moved
-# and new_x and new_y are the coordinates of the square to be moved to. If these methods
-# are used then the board will automatically track the turn and update it's own board state
-# otherwise, an entirely new board can be passed in using board.setBoard(bd). This will
-# reduce the chance of board state diverging, but if this method is used, be sure to call
-# board.toggleTurn() or board.setTurn() to update what turn it is after each new write.
+# 11x11 and fills itself with a properly set up hnefatafl board.
 
+# Use the method 'board.humanTakeTurn([x,y,newx,newy])' where x and y are the coordinates
+# of the piece to be moved and newx and newy are the coordinates of the square to be moved
+# to.
+
+# Use the method '.aiTakeTurnBasic()' to request a move from the basic AI.
+
+# Both of the above methods will update the board state and turn when they are made.
+
+# These values are used to avoid a bunch of hard to read numbers in the code.
+# Note that WHITE and BLACK are used both to designate piece type and player turn.
+# Please note that because of this, turn cannot be toggled with 'turn = not turn'
+# Instead, please use the .getOppositeColor(color) method
 EMPTY = 0
 WHITE = 1
 BLACK = 2
 KING = 3
 
 class board:
+    # The board will instantiate to an 11 by 11 board with pieces set up in their
+    # starting configuration. If you create a board object with an input other than nothing
+    # or 11, it will be empty. I wouldn't recommend it though, as there are a bunch of assumptions of
+    # size 11 that I probably aren't going to fix in this code. Instantiate to a nonstandard size at
+    # your own risk
     def __init__(self,size = 11):
         self.squares = [[EMPTY for j in range(size)] for i in range(size)]
         self.size = size
@@ -64,7 +73,7 @@ class board:
 
             self.squares[7][5] = WHITE 
 
-    # Prints out the board
+    # Prints out the board for debugging
     def printBoard(self):
         for i in range(self.size):
             for j in range(self.size):
@@ -82,18 +91,18 @@ class board:
         else:
             print "BLACK"
 
-    # Gets the turn
+    # Returns the turn
     def getTurn(self):
         return self.turn
 
-    # Gets the opposing color
+    # Returns the color opposite from the one passed
     def getOppositeColor(self,color):
         if color == WHITE:
             return BLACK
         else:
             return WHITE
 
-    # Sets the turn
+    # Sets the turn for the board
     def setTurn(self,turn):
         self.turn = turn
 
@@ -109,7 +118,8 @@ class board:
     def getSquare(self,x,y):
         return self.squares[x][y]
 
-    # Set full board state.
+    # Set full board state by passing in a fully configured board array. Will only work if
+    # the size of the given board matches the size of the board that the object was instantiated to
     def setBoard(self,bd):
         if (len(bd) != self.size) or (len(bd[0]) != self.size):
             return -1
@@ -117,7 +127,8 @@ class board:
             self.squares = bd
             return 0
 
-    # Returns the array of squares
+    # Returns the board array. This can be saved elsewhere and passed back in to .setBoard(board)
+    # in order to revert to an earlier state
     def getBoard(self):
         return self.squares
 
@@ -165,14 +176,14 @@ class board:
 
         return moves
 
-    # Returns the color of a given piece.
+    # Returns the color of a given piece. Used for easier comparison between a selected piece and the current turn
     def pieceToColor(self,piece):
         if piece == KING:
             return WHITE
         else:
             return piece
 
-    # Generates an array of all valid moves for a given color
+    # Generates an array of all valid moves for a given color in the format [[x_1,y_1,xnew_1,ynew_1],[x_2,y_2,xnew_1,ynew_1],...,[x_n,y_n,xnew_n,ynew_n]]
     def getMoveset(self,color):
         moveset = []
         pieces = self.getPieces(color)
@@ -182,6 +193,8 @@ class board:
                 moveset.append(moves[j])
         return moveset
 
+    # Returns true only if the passed coordinates are a special square, these squares are the four corners and the middle square
+    # There significance is that they cannot be moved to except by the king and can be used to capture pieces.
     def isSpecialSquare(self,x,y):
         if x == 5 and y == 5:
             return True
@@ -191,6 +204,7 @@ class board:
             return False
 
     # Takes an 4 value array generated by getMoveset() or getMoves() and implements the move. Performs incomplete move validation as well
+    # Seriously, this method checks for some things, but not for others. Don't count on it to only implement correct moves
     def makeMove(self,move):
         oldSquare = self.getSquare(move[0],move[1])
         newSquare = self.getSquare(move[2],move[3])
@@ -217,47 +231,26 @@ class board:
         x = move[2]
         y = move[3]
 
-#        print self.printPiece(self.turn)
-
         if x <= 8:
-#            print "checking below"
-#            print self.isSpecialSquare(x+2,y)
-#            print self.pieceToColor(self.getSquare(x+2,y))
-#            print self.getSquare(x+1,y)
-#            print self.getOppositeColor(self.turn)
             if ( self.isSpecialSquare(x+2,y) or self.pieceToColor(self.getSquare(x+2,y)) == self.turn ) and self.getSquare(x+1,y) == self.getOppositeColor(self.turn):
                 print "removing below"
                 self.setSquare(EMPTY,x+1,y)
         if x >= 2:
-#            print "checking above"
-#            print self.isSpecialSquare(x-2,y)
-#            print self.pieceToColor(self.getSquare(x-2,y))
-#            print self.getSquare(x-1,y)
-#            print self.getOppositeColor(self.turn)
             if ( self.isSpecialSquare(x-2,y) or self.pieceToColor(self.getSquare(x-2,y)) == self.turn ) and self.getSquare(x-1,y) == self.getOppositeColor(self.turn):
                 print "removing above"
                 self.setSquare(EMPTY,x-1,y)
         if y <= 8:
-#            print "checking right"
-#            print self.isSpecialSquare(x,y+2)
-#            print self.pieceToColor(self.getSquare(x,y+2))
-#            print self.getSquare(x,y+1)
-#            print self.getOppositeColor(self.turn)
             if ( self.isSpecialSquare(x,y+2) or self.pieceToColor(self.getSquare(x,y+2)) == self.turn ) and self.getSquare(x,y+1) == self.getOppositeColor(self.turn):
                 print "removing right"
                 self.setSquare(EMPTY,x,y+1)
         if y >= 2:
-#            print "checking left"
-#            print self.isSpecialSquare(x,y-2)
-#            print self.pieceToColor(self.getSquare(x,y-2))
-#            print self.getSquare(x,y-1)
-#            print self.getOppositeColor(self.turn)
             if ( self.isSpecialSquare(x,y-2) or self.pieceToColor(self.getSquare(x,y-2)) == self.turn ) and self.getSquare(x,y-1) == self.getOppositeColor(self.turn):
                 print "removing left"
                 self.setSquare(EMPTY,x,y-1)
 
         return 0
 
+    # Prints out a string corresponding to which piece is passed in. Used for debugging.
     def printPiece(self,piece):
         if piece == EMPTY:
             print "Empty"
@@ -278,7 +271,7 @@ class board:
         self.toggleTurn()
         return moveset[choice]
 
-    # Finds the location of the king
+    # Returns the coordinates of the king
     def findKing(self):
         for i in range(11):
             for j in range(11):
@@ -288,7 +281,8 @@ class board:
         return "shit"
         
     
-    # Find the edges of the king
+    # Returns all adjacent squares to the king. Used for checking for win conditions and for
+    # finding good moves for black
     def getKingSides(self):
         kingSides = []
         kingLoc = self.findKing()
@@ -303,13 +297,14 @@ class board:
         return kingSides
 
 
-    # The AI trys to make a winning move, otherwise it makes a random move.
+    # The AI attempts to make a winning move or a simplistically good move. Otherwise it makes a random move.
     def aiTakeTurnBasic(self):
         full_moveset = self.getMoveset(self.turn)
         better_moveset = []
         okay_moveset = []
 
-        # If its white's turn, check to see if you can move your king to a corner and then do that. If you can't, make a random move
+        # If its white's turn, check to see if you can move your king to a corner and then do that. Then see if you can move to an edge
+        # If you can't do that either, make a random move
         if(self.turn == WHITE):
             for i in range(len(full_moveset)):
                 if full_moveset[i][0:2] == self.findKing():

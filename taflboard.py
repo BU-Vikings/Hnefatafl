@@ -161,7 +161,7 @@ class board:
         self.setSquare(oldSquare,move[2],move[3])
         return 0
 
-    # Makes a random move out of the set of valid moves for the color that currently has the turn
+    # AI makes a random move out of the set of valid moves for the color that currently has the turn
     def aiTakeTurnRandom(self):
         moveset = self.getMoveset(self.turn)
         choice = random.randint(0,len(moveset)-1)
@@ -169,7 +169,38 @@ class board:
         self.toggleTurn()
         return moveset[choice]
 
+    # The AI trys to make a winning move, otherwise it makes a random move.
+    def aiTakeTurnBasic(self):
+        full_moveset = self.getMoveset(self.turn)
+        better_moveset = []
+
+        # If its white's turn, check to see if you can move your king to a corner and then do that. If you can't, make a random move
+        if(self.turn == WHITE):
+            for i in range(len(full_moveset)):
+                if (self.getSquare(full_moveset[i][0],full_moveset[i][1]) == KING) and ( (full_moveset[i][2] == 0 or full_moveset[i][2] == 10) and (full_moveset[i][3] == 0 or full_moveset[i][3] == 10) ):
+                    better_moveset.append(full_moveset[i])
+            if better_moveset == []:
+                choice = random.randint(0,len(full_moveset)-1)
+                self.makeMove(full_moveset[choice])
+                self.toggleTurn()
+                return full_moveset[choice]
+            else:
+                choice = random.randint(0,len(better_moveset)-1)
+                self.makeMove(better_moveset[choice])
+                self.toggleTurn()
+                return better_moveset[choice]
+                
+        # If its black's turn, just make a random move.
+        else:
+            choice = random.randint(0,len(full_moveset)-1)
+            self.makeMove(full_moveset[choice])
+            self.toggleTurn()
+            return full_moveset[choice]
+
+
+
     # Make a move and toggles who has the turn. Use this method for passing in user inputed moves
+    # WARNING! THIS FUNCTION DOES NOT CHECK FOR BLOCKING PIECES! IT CAN BE USED TO MAKE ILLEGAL MOVES
     def humanTakeTurn(self,move):
         if self.makeMove(move) == -1:
             print "Invalid Move"

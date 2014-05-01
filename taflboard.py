@@ -1,6 +1,7 @@
 #!/usr/bin/python2
 
 import random
+import sys
 
 # This module defines the board class. A board object contains a 2D array of values
 # defined as 2 layers of lists, as in [[1,2],[3,4]]. The board also tracks turns and
@@ -25,6 +26,7 @@ class board:
         self.squares = [[EMPTY for j in range(size)] for i in range(size)]
         self.size = size
         self.turn = WHITE
+        self.win = EMPTY
 
         # Set up the board
 
@@ -62,6 +64,24 @@ class board:
 
             self.squares[7][5] = WHITE 
 
+    # Prints out the board
+    def printBoard(self):
+        for i in range(self.size):
+            for j in range(self.size):
+                if self.getSquare(i,j) == WHITE:
+                    sys.stdout.write('W')
+                elif self.getSquare(i,j) == BLACK:
+                    sys.stdout.write('B')
+                elif self.getSquare(i,j) == EMPTY:
+                    sys.stdout.write(' ')
+                elif self.getSquare(i,j) == KING:
+                    sys.stdout.write('K')
+            sys.stdout.write('\n')
+        if self.turn == WHITE:
+            print "WHITE"
+        else:
+            print "BLACK"
+
     # Sets the turn
     def setTurn(self,turn):
         self.turn = turn
@@ -96,8 +116,8 @@ class board:
     # Returns an array of coordinates listing all the pieces of a given color
     def getPieces(self,color):
         pieces=[]
-        for i in range(11):
-            for j in range(11):
+        for i in range(self.size):
+            for j in range(self.size):
                 if (self.squares[j][i] == color) or ( (color == WHITE) and (self.squares[j][i] == KING) ):
                     pieces.append([j,i])
         return pieces
@@ -112,23 +132,27 @@ class board:
         x_index = x - 1
         y_index = y
         while (x_index >= 0) and (self.getSquare(x_index,y_index) == EMPTY):
-            moves.append([x,y,x_index,y_index])
+            if ([x_index, y_index] != [5,5]) and ((([x_index, y_index] != [0,10]) and ([x_index, y_index] != [10,0]) and ([x_index, y_index] != [0,0]) and ([x_index, y_index] != [10,10])) or self.getSquare(x,y) == KING): 
+                moves.append([x,y,x_index,y_index])
             x_index -= 1
 
         x_index = x + 1
         while (x_index <= 10) and (self.getSquare(x_index,y_index) == EMPTY):
-            moves.append([x,y,x_index,y_index])
+            if ([x_index, y_index] != [5,5]) and ((([x_index, y_index] != [0,10]) and ([x_index, y_index] != [10,0]) and ([x_index, y_index] != [0,0]) and ([x_index, y_index] != [10,10])) or self.getSquare(x,y) == KING): 
+                moves.append([x,y,x_index,y_index])
             x_index += 1
 
         x_index = x
         y_index = y - 1
         while (y_index >= 0) and (self.getSquare(x_index,y_index) == EMPTY):
-            moves.append([x,y,x_index,y_index])
+            if ([x_index, y_index] != [5,5]) and ((([x_index, y_index] != [0,10]) and ([x_index, y_index] != [10,0]) and ([x_index, y_index] != [0,0]) and ([x_index, y_index] != [10,10])) or self.getSquare(x,y) == KING): 
+                moves.append([x,y,x_index,y_index])
             y_index -= 1
 
         y_index = y + 1
         while (y_index <= 10) and (self.getSquare(x_index,y_index) == EMPTY):
-            moves.append([x,y,x_index,y_index])
+            if ([x_index, y_index] != [5,5]) and ((([x_index, y_index] != [0,10]) and ([x_index, y_index] != [10,0]) and ([x_index, y_index] != [0,0]) and ([x_index, y_index] != [10,10])) or self.getSquare(x,y) == KING): 
+                moves.append([x,y,x_index,y_index])
             y_index += 1
 
         return moves
@@ -149,12 +173,19 @@ class board:
         newSquare = self.getSquare(move[2],move[3])
         
         if oldSquare == EMPTY:
+            print "Nothing to move"
             return -1
 
         if newSquare != EMPTY:
+            print "Something's in the way"
             return -1
 
         if (move[0] != move[2]) and (move[1] != move[3]):
+            print "That's a diagonal"
+            return -1
+
+        if (oldSquare != self.turn) and (not(self.turn == WHITE and oldSquare == KING)):
+            print "Its not that pieces turn"
             return -1
 
         self.setSquare(EMPTY,move[0],move[1])
@@ -169,16 +200,71 @@ class board:
         self.toggleTurn()
         return moveset[choice]
 
+    # Finds the location of the king
+    def findKing(self):
+        for i in range(11):
+            for j in range(11):
+                if (self.squares[j][i] == KING):
+                    return [j,i]
+        print "Something went terribly wrong"
+        return "shit"
+        
+    
+    # Find the edges of the king
+    def getKingSides(self):
+        kingSides = []
+        kingLoc = self.findKing()
+        if kingLoc[0] > 0:
+            kingSides.append([kingLoc[0]-1,kingLoc[1]])
+        if kingLoc[0] < 10:
+            kingSides.append([kingLoc[0]+1,kingLoc[1]])
+        if kingLoc[1] > 0:
+            kingSides.append([kingLoc[0],kingLoc[1]-1])
+        if kingLoc[1] < 10:
+            kingSides.append([kingLoc[0],kingLoc[1]+1])
+        return kingSides
+
+
     # The AI trys to make a winning move, otherwise it makes a random move.
     def aiTakeTurnBasic(self):
         full_moveset = self.getMoveset(self.turn)
         better_moveset = []
+        okay_moveset = []
 
         # If its white's turn, check to see if you can move your king to a corner and then do that. If you can't, make a random move
         if(self.turn == WHITE):
             for i in range(len(full_moveset)):
-                if (self.getSquare(full_moveset[i][0],full_moveset[i][1]) == KING) and ( (full_moveset[i][2] == 0 or full_moveset[i][2] == 10) and (full_moveset[i][3] == 0 or full_moveset[i][3] == 10) ):
-                    better_moveset.append(full_moveset[i])
+                if full_moveset[i][0:2] == self.findKing():
+                    if (full_moveset[i][2] == 0 or full_moveset[i][2] == 10) and (full_moveset[i][3] == 0 or full_moveset[i][3] == 10):
+                        better_moveset.append(full_moveset[i])
+                    elif full_moveset[i][2] == 0 or full_moveset[i][2] == 10 or full_moveset[i][3] == 0 or full_moveset[i][3] == 10:
+                        okay_moveset.append(full_moveset[i])
+            if better_moveset != []:
+                choice = random.randint(0,len(better_moveset)-1)
+                self.makeMove(better_moveset[choice])
+                self.toggleTurn()
+                return better_moveset[choice]
+            elif okay_moveset != []:
+                choice = random.randint(0,len(okay_moveset)-1)
+                self.makeMove(okay_moveset[choice])
+                self.toggleTurn()
+                return okay_moveset[choice]
+            else:
+                choice = random.randint(0,len(full_moveset)-1)
+                self.makeMove(full_moveset[choice])
+                self.toggleTurn()
+                return full_moveset[choice]
+                
+        # If its black's turn, try to get your junk next to the king. If you can't, make a random move
+        else:
+            kingSides = self.getKingSides()
+            for i in range(len(full_moveset)):
+                for j in range(len(kingSides)):
+                    if full_moveset[i][2:4] == kingSides[j]:
+                        print "Found a good move"
+                        print full_moveset[i][2:4]
+                        print kingSides[j]
+                        better_moveset.append(full_moveset[i])
             if better_moveset == []:
                 choice = random.randint(0,len(full_moveset)-1)
                 self.makeMove(full_moveset[choice])
@@ -189,15 +275,7 @@ class board:
                 self.makeMove(better_moveset[choice])
                 self.toggleTurn()
                 return better_moveset[choice]
-                
-        # If its black's turn, just make a random move.
-        else:
-            choice = random.randint(0,len(full_moveset)-1)
-            self.makeMove(full_moveset[choice])
-            self.toggleTurn()
-            return full_moveset[choice]
-
-
+            
 
     # Make a move and toggles who has the turn. Use this method for passing in user inputed moves
     # WARNING! THIS FUNCTION DOES NOT CHECK FOR BLOCKING PIECES! IT CAN BE USED TO MAKE ILLEGAL MOVES

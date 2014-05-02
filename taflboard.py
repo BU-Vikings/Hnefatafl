@@ -233,19 +233,15 @@ class board:
 
         if x <= 8:
             if ( self.isSpecialSquare(x+2,y) or self.pieceToColor(self.getSquare(x+2,y)) == self.turn ) and self.getSquare(x+1,y) == self.getOppositeColor(self.turn):
-                print "removing below"
                 self.setSquare(EMPTY,x+1,y)
         if x >= 2:
             if ( self.isSpecialSquare(x-2,y) or self.pieceToColor(self.getSquare(x-2,y)) == self.turn ) and self.getSquare(x-1,y) == self.getOppositeColor(self.turn):
-                print "removing above"
                 self.setSquare(EMPTY,x-1,y)
         if y <= 8:
             if ( self.isSpecialSquare(x,y+2) or self.pieceToColor(self.getSquare(x,y+2)) == self.turn ) and self.getSquare(x,y+1) == self.getOppositeColor(self.turn):
-                print "removing right"
                 self.setSquare(EMPTY,x,y+1)
         if y >= 2:
             if ( self.isSpecialSquare(x,y-2) or self.pieceToColor(self.getSquare(x,y-2)) == self.turn ) and self.getSquare(x,y-1) == self.getOppositeColor(self.turn):
-                print "removing left"
                 self.setSquare(EMPTY,x,y-1)
 
         return 0
@@ -296,12 +292,37 @@ class board:
             kingSides.append([kingLoc[0],kingLoc[1]+1])
         return kingSides
 
+    def findCaptureMoves(self,moveset):
+        color = self.pieceToColor(self.getSquare(moveset[0][0],moveset[0][1]))
+        capture_moveset = []
+
+        for i in range(len(moveset)):
+            x = moveset[i][2]
+            y = moveset[i][3]
+
+            if x <= 8:
+                if ( self.isSpecialSquare(x+2,y) or self.pieceToColor(self.getSquare(x+2,y)) == self.turn ) and self.getSquare(x+1,y) == self.getOppositeColor(self.turn):
+                    capture_moveset.append(moveset[i])
+            if x >= 2:
+                if ( self.isSpecialSquare(x-2,y) or self.pieceToColor(self.getSquare(x-2,y)) == self.turn ) and self.getSquare(x-1,y) == self.getOppositeColor(self.turn):
+                    capture_moveset.append(moveset[i])
+            if y <= 8:
+                if ( self.isSpecialSquare(x,y+2) or self.pieceToColor(self.getSquare(x,y+2)) == self.turn ) and self.getSquare(x,y+1) == self.getOppositeColor(self.turn):
+                    capture_moveset.append(moveset[i])
+            if y >= 2:
+                if ( self.isSpecialSquare(x,y-2) or self.pieceToColor(self.getSquare(x,y-2)) == self.turn ) and self.getSquare(x,y-1) == self.getOppositeColor(self.turn):
+                    capture_moveset.append(moveset[i])
+                    
+        return capture_moveset
+
+
 
     # The AI attempts to make a winning move or a simplistically good move. Otherwise it makes a random move.
     def aiTakeTurnBasic(self):
         full_moveset = self.getMoveset(self.turn)
         better_moveset = []
         okay_moveset = []
+        capture_moveset = self.findCaptureMoves(full_moveset)
 
         # If its white's turn, check to see if you can move your king to a corner and then do that. Then see if you can move to an edge
         # If you can't do that either, make a random move
@@ -317,6 +338,11 @@ class board:
                 self.makeMove(better_moveset[choice])
                 self.toggleTurn()
                 return better_moveset[choice]
+            elif capture_moveset != []:
+                choice = random.randint(0,len(capture_moveset)-1)
+                self.makeMove(capture_moveset[choice])
+                self.toggleTurn()
+                return capture_moveset[choice]
             elif okay_moveset != []:
                 choice = random.randint(0,len(okay_moveset)-1)
                 self.makeMove(okay_moveset[choice])
@@ -343,6 +369,11 @@ class board:
                 self.makeMove(full_moveset[choice])
                 self.toggleTurn()
                 return full_moveset[choice]
+            elif capture_moveset != []:
+                choice = random.randint(0,len(capture_moveset)-1)
+                self.makeMove(capture_moveset[choice])
+                selt.toggleTurn()
+                return capture_moveset([choice])
             else:
                 choice = random.randint(0,len(better_moveset)-1)
                 self.makeMove(better_moveset[choice])
